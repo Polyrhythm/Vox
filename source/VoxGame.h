@@ -52,7 +52,7 @@
 #include "GameGUI/HUD.h"
 
 
-#ifdef __linux__
+#if defined(__linux__) || (__APPLE__)
 typedef struct POINT {
   float x;
   float y;
@@ -404,7 +404,7 @@ private:
 	Biome m_currentBiome;
 
 	// Interacting item
-	mutex m_interactItemMutex;
+  std::mutex m_interactItemMutex;
 	Item* m_pInteractItem;
 
 	// Window width and height

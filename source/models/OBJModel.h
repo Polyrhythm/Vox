@@ -3,6 +3,9 @@
 #include "BoundingBox.h"
 #include "../Renderer/Renderer.h"
 
+#ifdef __APPLE__
+#define fopen_s
+#endif
 
 // OBJ Model structs
 typedef struct {

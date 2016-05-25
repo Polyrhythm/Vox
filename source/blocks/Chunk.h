@@ -228,7 +228,7 @@ private:
 	BlockType *m_blockType;
 
 	// Item list
-	mutex m_itemMutexLock;
+  std::mutex m_itemMutexLock;
 	ItemList m_vpItemList;
 
 	// Render mesh

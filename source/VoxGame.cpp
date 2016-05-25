@@ -15,7 +15,7 @@
 #include "utils/Interpolator.h"
 #include <glm/detail/func_geometric.hpp>
 
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
 #include <sys/time.h>
 #endif //__linux__
 
@@ -129,14 +129,14 @@ void VoxGame::Create(VoxSettings* pVoxSettings)
 	m_pRenderer->CreateViewport(m_portraitViewportY, m_portraitViewportX, m_portraitViewportWidth, m_portraitViewportHeight, 60.0f, &m_portraitViewport);
 
 	/* Create fonts */
-	m_pRenderer->CreateFreeTypeFont("media/fonts/arial.ttf", 12, &m_defaultFont);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/arial.ttf", 12, &m_defaultFont);
 
 	/* Create the custom cursor textures */
 	int lTextureWidth, lTextureHeight, lTextureWidth2, lTextureHeight2;
-	m_pRenderer->LoadTexture("media/textures/cursors/finger_cursor_normal.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorNormalBuffer);
-	m_pRenderer->LoadTexture("media/textures/cursors/finger_cursor_clicked.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorClickedBuffer);
-	m_pRenderer->LoadTexture("media/textures/cursors/finger_cursor_rotate.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorRotateBuffer);
-	m_pRenderer->LoadTexture("media/textures/cursors/finger_cursor_zoom.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorZoomBuffer);
+	m_pRenderer->LoadTexture("/Users/ryanjones/Development/cpp/Vox/media/textures/cursors/finger_cursor_normal.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorNormalBuffer);
+	m_pRenderer->LoadTexture("/Users/ryanjones/Development/cpp/Vox/media/textures/cursors/finger_cursor_clicked.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorClickedBuffer);
+	m_pRenderer->LoadTexture("/Users/ryanjones/Development/cpp/Vox/media/textures/cursors/finger_cursor_rotate.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorRotateBuffer);
+	m_pRenderer->LoadTexture("/Users/ryanjones/Development/cpp/Vox/media/textures/cursors/finger_cursor_zoom.tga", &lTextureWidth, &lTextureHeight, &lTextureWidth2, &lTextureHeight2, &m_customCursorZoomBuffer);
 
 	/* Create lights */
 	m_defaultLightPosition = vec3(300.0f, 300.0f, 300.0f);
@@ -177,18 +177,18 @@ void VoxGame::Create(VoxSettings* pVoxSettings)
 	m_blurVerticalShader = -1;
 	m_blurHorizontalShader = -1;
 	m_paperdollShader = -1;
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/default.vertex", "media/shaders/default.pixel", &m_defaultShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/phong.vertex", "media/shaders/phong.pixel", &m_phongShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/shadow.vertex", "media/shaders/shadow.pixel", &m_shadowShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/water_still.vertex", "media/shaders/water_still.pixel", &m_waterShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/texture.vertex", "media/shaders/texture.pixel", &m_textureShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/fullscreen/SSAO.vertex", "media/shaders/fullscreen/SSAO.pixel", &m_SSAOShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/fullscreen/fxaa.vertex", "media/shaders/fullscreen/fxaa.pixel", &m_fxaaShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/fullscreen/lighting.vertex", "media/shaders/fullscreen/lighting.pixel", &m_lightingShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/cube_map.vertex", "media/shaders/cube_map.pixel", &m_cubeMapShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/fullscreen/blur_vertical.vertex", "media/shaders/fullscreen/blur_vertical.pixel", &m_blurVerticalShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/fullscreen/blur_horizontal.vertex", "media/shaders/fullscreen/blur_horizontal.pixel", &m_blurHorizontalShader);
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/paperdoll.vertex", "media/shaders/paperdoll.pixel", &m_paperdollShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/default.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/default.pixel", &m_defaultShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/phong.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/phong.pixel", &m_phongShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/shadow.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/shadow.pixel", &m_shadowShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/water_still.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/water_still.pixel", &m_waterShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/texture.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/texture.pixel", &m_textureShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/SSAO.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/SSAO.pixel", &m_SSAOShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/fxaa.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/fxaa.pixel", &m_fxaaShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/lighting.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/lighting.pixel", &m_lightingShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/cube_map.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/cube_map.pixel", &m_cubeMapShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/blur_vertical.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/blur_vertical.pixel", &m_blurVerticalShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/blur_horizontal.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/fullscreen/blur_horizontal.pixel", &m_blurHorizontalShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/paperdoll.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/paperdoll.pixel", &m_paperdollShader);
 
 	/* Create the mods manager */
 	m_pModsManager = new ModsManager();
@@ -759,13 +759,13 @@ void VoxGame::QuitToFrontEnd()
 void VoxGame::SetupDataForGame()
 {
 	// Items
-	Item* pFurnace = m_pItemManager->CreateItem(vec3(25.0f, 10.0f, -5.0f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 0.0f, 0.0f), "media/gamedata/items/Furnace/Furnace.item", eItem_Furnace, "Furnace", true, false, 0.16f);
+	Item* pFurnace = m_pItemManager->CreateItem(vec3(25.0f, 10.0f, -5.0f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 0.0f, 0.0f), "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Furnace/Furnace.item", eItem_Furnace, "Furnace", true, false, 0.16f);
 	pFurnace->SetInteractionPositionOffset(vec3(0.0f, 0.0f, -2.0f));
-	Item* pAnvil = m_pItemManager->CreateItem(vec3(32.0f, 9.0f, -1.5f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 0.0f, 0.0f), "media/gamedata/items/Anvil/Anvil.item", eItem_Anvil, "Anvil", true, false, 0.14f);
+	Item* pAnvil = m_pItemManager->CreateItem(vec3(32.0f, 9.0f, -1.5f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 0.0f, 0.0f), "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Anvil/Anvil.item", eItem_Anvil, "Anvil", true, false, 0.14f);
 	pAnvil->SetInteractionPositionOffset(vec3(0.0f, 0.0f, -1.5f));
 	
 	// Chest with random loot item
-	Item* pChest = m_pItemManager->CreateItem(vec3(24.0f, 12.0f, 13.5f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 180.0f, 0.0f), "media/gamedata/items/Chest/Chest.item", eItem_Chest, "Chest", true, false, 0.08f);
+	Item* pChest = m_pItemManager->CreateItem(vec3(24.0f, 12.0f, 13.5f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 180.0f, 0.0f), "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Chest/Chest.item", eItem_Chest, "Chest", true, false, 0.08f);
 	eEquipment equipment = eEquipment_None;
 	InventoryItem* pRandomLoot = VoxGame::GetInstance()->GetRandomLootManager()->GetRandomLootItem(&equipment);
 	if (pRandomLoot != NULL && equipment != eEquipment_None)

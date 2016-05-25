@@ -14,8 +14,13 @@
 #ifdef _WIN32
 #include <windows.h>
 #endif //_WIN32
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
 #include <GL/gl.h>
 #include <GL/glu.h>
+#endif
 
 #include <stdio.h>
 #include <string.h>
@@ -82,7 +87,7 @@ void VoxWindow::Create()
 	int samples = 8;
 	glfwWindowHint(GLFW_SAMPLES, samples);
 	glfwWindowHint(GLFW_VISIBLE, GL_FALSE);
-	glGetIntegerv(GL_SAMPLES_ARB, &samples);
+	// glGetIntegerv(GL_SAMPLES_ARB, &samples);
 
 	/* Initialize the joysticks object */
 	memset(m_joysticks, 0, sizeof(m_joysticks));

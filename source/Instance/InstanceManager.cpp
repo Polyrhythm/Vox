@@ -24,7 +24,7 @@ InstanceManager::InstanceManager(Renderer* pRenderer)
 	m_pRenderer = pRenderer;
 
 	m_instanceShader = -1;
-	m_pRenderer->LoadGLSLShader("media/shaders/instance.vertex", "media/shaders/instance.pixel", &m_instanceShader);
+	m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/instance.vertex", "/Users/ryanjones/Development/cpp/Vox/media/shaders/instance.pixel", &m_instanceShader);
 
 	m_checkChunkInstanceTimer = 0.0f;
 

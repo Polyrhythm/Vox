@@ -120,6 +120,6 @@ private:
 	int m_numRenderNPCs;
 
 	// NPC List
-	mutex m_NPCMutex;
+  std::mutex m_NPCMutex;
 	NPCList m_vpNPCList;
 };

@@ -18,6 +18,7 @@
 
 #include <stdio.h>
 #include <assert.h>
+#include <iostream>
 
 #include <freetype/freetype.h>
 #include <freetype/ftglyph.h>
@@ -72,6 +73,9 @@ void FreeTypeFont::BuildFont(const char* fontName, int size, bool noAutoHint)
 	else if ( l_error )
 	{
 		// The font could not be opened
+    std::cout << l_error << "'\n";
+    std::cout << fontName << "'\n";
+    std::cout << &m_face << "'\n";
 		assert(0);
 	}
 

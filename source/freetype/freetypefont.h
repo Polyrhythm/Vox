@@ -19,8 +19,13 @@
 #ifdef _WIN32
 #include <windows.h>
 #endif //_WIN32
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
 #include <GL/gl.h>
 #include <GL/glu.h>
+#endif
 
 #include <ft2build.h>
 #include FT_FREETYPE_H

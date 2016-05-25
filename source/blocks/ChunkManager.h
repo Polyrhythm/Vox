@@ -266,7 +266,7 @@ private:
 
 	// Storage for modifications to chunks that are not loaded yet
 	ChunkStorageLoaderList m_vpChunkStorageList;
-	mutex m_chunkStorageListLock;
+  std::mutex m_chunkStorageListLock;
 
 	// Chunk counters
 	int m_numChunksLoaded;
@@ -274,8 +274,8 @@ private:
 
 	// Threading
 	thread* m_pUpdatingChunksThread;
-	mutex m_ChunkMapMutexLock;
+  std::mutex m_ChunkMapMutexLock;
 	bool m_updateThreadActive;
-	mutex m_updateThreadFlagLock;
+  std::mutex m_updateThreadFlagLock;
 	bool m_updateThreadFinished;
 };

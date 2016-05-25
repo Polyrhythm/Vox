@@ -14,7 +14,7 @@
 #include "utils/Interpolator.h"
 #include "utils/TimeManager.h"
 
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
 #include <sys/time.h>
 #endif //__linux__
 
@@ -212,7 +212,7 @@ void VoxGame::Update()
 
 void VoxGame::UpdateNamePicking()
 {
-	POINT lMouse = { VoxGame::GetInstance()->GetWindowCursorX(), (m_windowHeight - VoxGame::GetInstance()->GetWindowCursorY()) };
+  POINT lMouse = { VoxGame::GetInstance()->GetWindowCursorX(), (m_windowHeight - VoxGame::GetInstance()->GetWindowCursorY()) };
 
 	// Push attribs
 	glPushAttrib(GL_LIST_BIT | GL_CURRENT_BIT | GL_ENABLE_BIT | GL_TRANSFORM_BIT);

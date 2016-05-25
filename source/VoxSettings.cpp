@@ -32,11 +32,11 @@ VoxSettings::~VoxSettings()
 // Load settings
 void VoxSettings::LoadSettings()
 {
-	string settingsIniFile = "media/config/settings.ini";
+	string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/config/settings.ini";
 	INIReader reader(settingsIniFile);
 
 	if (reader.ParseError() < 0)
-	{
+  {
 		cout << "Can't load '" << settingsIniFile << "'\n";
 		return;
 	}
@@ -84,7 +84,7 @@ void VoxSettings::SaveSettings()
 // Load options
 void VoxSettings::LoadOptions()
 {
-	string optionsIniFile = "media/config/options.ini";
+	string optionsIniFile = "/Users/ryanjones/development/cpp/Vox/media/config/options.ini";
 	INIReader reader(optionsIniFile);
 
 	if (reader.ParseError() < 0)

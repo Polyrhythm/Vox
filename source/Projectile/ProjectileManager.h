@@ -88,8 +88,8 @@ private:
 	int m_numRenderProjectiles;
 
 	// Enemy lists
-	mutex m_projectileMutex;
+  std::mutex m_projectileMutex;
 	ProjectileList m_vpProjectileList;
-	mutex m_projectileCreateMutex;
+  std::mutex m_projectileCreateMutex;
 	ProjectileList m_vpProjectileCreateList;
 };

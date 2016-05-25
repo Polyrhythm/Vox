@@ -39,33 +39,33 @@ FrontendManager::FrontendManager(Renderer* pRenderer, OpenGLGUI* pGUI)
 	m_pCamera = NULL;
 
 	// Fonts
-	m_pRenderer->CreateFreeTypeFont("media/fonts/pf_ronda_seven.ttf", 26, &m_frontendFont_Large, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/pf_ronda_seven.ttf", 18, &m_frontendFont_Medium, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/pf_ronda_seven.ttf", 12, &m_frontendFont_Small, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 14, &m_frontendFont_14, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 14, &m_frontendFont_14_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 18, &m_frontendFont_18, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 18, &m_frontendFont_18_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 20, &m_frontendFont_20, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 20, &m_frontendFont_20_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 22, &m_frontendFont_22, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 22, &m_frontendFont_22_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 25, &m_frontendFont_25, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 25, &m_frontendFont_25_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 30, &m_frontendFont_30, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 30, &m_frontendFont_30_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 35, &m_frontendFont_35, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 35, &m_frontendFont_35_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 40, &m_frontendFont_40, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 40, &m_frontendFont_40_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 50, &m_frontendFont_50, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 50, &m_frontendFont_50_Outline, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 80, &m_frontendFont_80, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 80, &m_frontendFont_80_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/pf_ronda_seven.ttf", 26, &m_frontendFont_Large, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/pf_ronda_seven.ttf", 18, &m_frontendFont_Medium, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/pf_ronda_seven.ttf", 12, &m_frontendFont_Small, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 14, &m_frontendFont_14, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 14, &m_frontendFont_14_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 18, &m_frontendFont_18, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 18, &m_frontendFont_18_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 20, &m_frontendFont_20, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 20, &m_frontendFont_20_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 22, &m_frontendFont_22, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 22, &m_frontendFont_22_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 25, &m_frontendFont_25, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 25, &m_frontendFont_25_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 30, &m_frontendFont_30, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 30, &m_frontendFont_30_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 35, &m_frontendFont_35, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 35, &m_frontendFont_35_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 40, &m_frontendFont_40, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 40, &m_frontendFont_40_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 50, &m_frontendFont_50, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 50, &m_frontendFont_50_Outline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 80, &m_frontendFont_80, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 80, &m_frontendFont_80_Outline, true);
 
 	// Text effects fonts
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolbackot.ttf", 34, &m_textEffectFontNormal, true);
-	m_pRenderer->CreateFreeTypeFont("media/fonts/screenloggercoolot.ttf", 34, &m_textEffectFontOutline, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolbackot.ttf", 34, &m_textEffectFontNormal, true);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/screenloggercoolot.ttf", 34, &m_textEffectFontOutline, true);
 
 	// Label colours
 	m_normalColour = Colour(1.0f, 1.0f, 1.0f);
@@ -443,99 +443,99 @@ void FrontendManager::LoadCommonGraphics(string themeName)
 	string iconName;
 
 	// Checkbox
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkDefault.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkDefault.tga";
 	m_pCheckboxIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkHover.tga";
 	m_pCheckboxIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkPressed.tga";
 	m_pCheckboxIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkDisabled.tga";
 	m_pCheckboxIconDisabled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkToggled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkToggled.tga";
 	m_pCheckboxIconToggled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkToggledHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkToggledHover.tga";
 	m_pCheckboxIconToggledHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkToggledPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkToggledPressed.tga";
 	m_pCheckboxIconToggledPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/checkbox/checkToggledDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/checkbox/checkToggledDisabled.tga";
 	m_pCheckboxIconToggledDisabled->SetIcon(iconName);
 
 	// Optionbox
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionDefault.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionDefault.tga";
 	m_pOptionboxIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionHover.tga";
 	m_pOptionboxIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionPressed.tga";
 	m_pOptionboxIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionDisabled.tga";
 	m_pOptionboxIconDisabled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionToggled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionToggled.tga";
 	m_pOptionboxIconToggled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionToggledHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionToggledHover.tga";
 	m_pOptionboxIconToggledHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionToggledPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionToggledPressed.tga";
 	m_pOptionboxIconToggledPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/optionbox/optionToggledDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/optionbox/optionToggledDisabled.tga";
 	m_pOptionboxIconToggledDisabled->SetIcon(iconName);
 
 	// Scrollbar
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowDownDefault.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowDownDefault.tga";
 	m_pScrollbarArrowDownIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowDownHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowDownHover.tga";
 	m_pScrollbarArrowDownIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowDownPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowDownPressed.tga";
 	m_pScrollbarArrowDownIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowDownDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowDownDisabled.tga";
 	m_pScrollbarArrowDownIconDisabled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowUpDefault.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowUpDefault.tga";
 	m_pScrollbarArrowUpIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowUpHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowUpHover.tga";
 	m_pScrollbarArrowUpIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowUpPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowUpPressed.tga";
 	m_pScrollbarArrowUpIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/arrowUpDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/arrowUpDisabled.tga";
 	m_pScrollbarArrowUpIconDisabled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/backgroundDefault.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/backgroundDefault.tga";
 	m_pScrollbarBackgroundIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/backgroundDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/backgroundDisabled.tga";
 	m_pScrollbarBackgroundIconDisabled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/scrollbarDefault.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/scrollbarDefault.tga";
 	m_pScrollbarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/scrollbarHover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/scrollbarHover.tga";
 	m_pScrollbarIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/scrollbarPressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/scrollbarPressed.tga";
 	m_pScrollbarIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/scrollbar/scrollbarDisabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/scrollbar/scrollbarDisabled.tga";
 	m_pScrollbarIconDisabled->SetIcon(iconName);
 
 	// Slider
-	iconName = "media/textures/gui/" + themeName + "/common/slider/slider_slide.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/slider/slider_slide.tga";
 	m_pSliderIconDefault->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/slider/slider_slide_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/slider/slider_slide_hover.tga";
 	m_pSliderIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/slider/slider_slide_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/slider/slider_slide_pressed.tga";
 	m_pSliderIconDrag->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/slider/slider_slide_blank.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/slider/slider_slide_blank.tga";
 	m_pSliderIconDefaultBlank->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/slider/slider_slide_hover_blank.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/slider/slider_slide_hover_blank.tga";
 	m_pSliderIconHoverBlank->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/slider/slider_slide_pressed_blank.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/slider/slider_slide_pressed_blank.tga";
 	m_pSliderIconDragBlank->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/plus_default.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/plus_default.tga";
 	m_pSliderIncrementIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/plus_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/plus_hover.tga";
 	m_pSliderIncrementIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/plus_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/plus_pressed.tga";
 	m_pSliderIncrementIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/plus_disabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/plus_disabled.tga";
 	m_pSliderIncrementIconDisabled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/minus_default.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/minus_default.tga";
 	m_pSliderDecrementIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/minus_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/minus_hover.tga";
 	m_pSliderDecrementIconHover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/minus_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/minus_pressed.tga";
 	m_pSliderDecrementIconPressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/increment_buttons/minus_disabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/increment_buttons/minus_disabled.tga";
 	m_pSliderDecrementIconDisabled->SetIcon(iconName);
 
 	// Buttons
@@ -547,54 +547,54 @@ void FrontendManager::LoadCommonGraphics(string themeName)
 		if (ButtonSize(i) == ButtonSize_110x47) { sizeFolder = "110x47"; }
 		if (ButtonSize(i) == ButtonSize_225x75) { sizeFolder = "225x75"; }
 
-		iconName = "media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonDefault.tga";
+		iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonDefault.tga";
 		m_pButtonIcon[ButtonSize(i)]->SetIcon(iconName);
-		iconName = "media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonHover.tga";
+		iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonHover.tga";
 		m_pButtonIconHover[ButtonSize(i)]->SetIcon(iconName);
-		iconName = "media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonPressed.tga";
+		iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonPressed.tga";
 		m_pButtonIconPressed[ButtonSize(i)]->SetIcon(iconName);
-		iconName = "media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonDisabled.tga";
+		iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/buttons/" + sizeFolder + "/buttonDisabled.tga";
 		m_pButtonIconDisabled[ButtonSize(i)]->SetIcon(iconName);
 	}
 
 	// Close button
-	iconName = "media/textures/gui/" + themeName + "/common/close_button/close_exit.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/close_button/close_exit.tga";
 	m_pCloseExitButtonIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/close_button/close_exit_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/close_button/close_exit_hover.tga";
 	m_pCloseExitButtonIcon_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/close_button/close_exit_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/close_button/close_exit_pressed.tga";
 	m_pCloseExitButtonIcon_Pressed->SetIcon(iconName);
 
 	// Rotate buttons
-	iconName = "media/textures/gui/" + themeName + "/common/rotate/arrow_left.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/rotate/arrow_left.tga";
 	m_pArrowLeft_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/rotate/arrow_left_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/rotate/arrow_left_hover.tga";
 	m_pArrowLeft_Icon_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/rotate/arrow_left_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/rotate/arrow_left_pressed.tga";
 	m_pArrowLeft_Icon_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/rotate/arrow_right.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/rotate/arrow_right.tga";
 	m_pArrowRight_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/rotate/arrow_right_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/rotate/arrow_right_hover.tga";
 	m_pArrowRight_Icon_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/rotate/arrow_right_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/rotate/arrow_right_pressed.tga";
 	m_pArrowRight_Icon_Pressed->SetIcon(iconName);
 
 	// Tab options
-	iconName = "media/textures/gui/" + themeName + "/common/tab_option/tab.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tab_option/tab.tga";
 	m_pTab75OptionIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/tab_option/tab_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tab_option/tab_hover.tga";
 	m_pTab75OptionIcon_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/tab_option/tab_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tab_option/tab_pressed.tga";
 	m_pTab75OptionIcon_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/tab_option/tab_toggled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tab_option/tab_toggled.tga";
 	m_pTab75OptionIcon_Toggled->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/tab_option/tab_toggled_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tab_option/tab_toggled_hover.tga";
 	m_pTab75OptionIcon_Toggled_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/tab_option/tab_toggled_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tab_option/tab_toggled_pressed.tga";
 	m_pTab75OptionIcon_Toggled_Pressed->SetIcon(iconName);
 
 	// Label colours
-	string settingsIniFile = "media/textures/gui/" + themeName + "/theme.ini";
+	string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/theme.ini";
 	INIReader reader(settingsIniFile);
 
 	if (reader.ParseError() >= 0)

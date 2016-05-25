@@ -25,8 +25,13 @@ using namespace glm;
 #ifdef _WIN32
 #include <windows.h>
 #endif //_WIN32
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
 #include <GL/gl.h>
 #include <GL/glu.h>
+#endif
 
 #pragma comment (lib, "opengl32")
 #pragma comment (lib, "glu32")
@@ -430,7 +435,7 @@ private:
 
 	// Vertex arrays, for storing static vertex data
 	vector<VertexArray *> m_vertexArrays;
-	mutex m_vertexArraysMutex;
+  std::mutex m_vertexArraysMutex;
 
 	// Frame buffers
 	vector<FrameBuffer*> m_vFrameBuffers;

@@ -41,7 +41,7 @@ OpenGLGUI::OpenGLGUI(Renderer* pRenderer)
 	m_audioVolume = 1.0f;
 
 	// Create the gui font
-	m_pRenderer->CreateFreeTypeFont("media/fonts/arial.ttf", 17, &m_GUIFont);
+	m_pRenderer->CreateFreeTypeFont("/Users/ryanjones/Development/cpp/Vox/media/fonts/arial.ttf", 17, &m_GUIFont);
 }
 
 OpenGLGUI::~OpenGLGUI()
