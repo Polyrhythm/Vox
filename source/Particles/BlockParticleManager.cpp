@@ -87,7 +87,7 @@ BlockParticleManager::BlockParticleManager(Renderer* pRenderer, ChunkManager* pC
 
 	bool shaderLoaded = false;
 	m_instanceShader = -1;
-	shaderLoaded = m_pRenderer->LoadGLSLShader("media/shaders/instance.vertex", "media/shaders/instance.pixel", &m_instanceShader);
+	shaderLoaded = m_pRenderer->LoadGLSLShader("/Users/ryanjones/Development/cpp/Vox/media/shaders/instance.vertex", "/Users/ryanjones/Development/cpp/Vov/media/shaders/instance.pixel", &m_instanceShader);
 
 	// Materials
 	m_pRenderer->CreateMaterial(Colour(0.7f, 0.7f, 0.7f, 1.0f), Colour(1.0f, 1.0f, 1.0f, 1.0f), Colour(1.0f, 1.0f, 1.0f, 1.0f), Colour(0.0f, 0.0f, 0.0f, 0.0f), 64, &m_blockMaterialID);

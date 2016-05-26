@@ -435,7 +435,7 @@ private:
 
 	// Vertex arrays, for storing static vertex data
 	vector<VertexArray *> m_vertexArrays;
-  std::mutex m_vertexArraysMutex;
+  tthread::mutex m_vertexArraysMutex;
 
 	// Frame buffers
 	vector<FrameBuffer*> m_vFrameBuffers;

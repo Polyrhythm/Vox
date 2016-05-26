@@ -19,11 +19,11 @@
 int main(void)
 {
   /* force Mac OSX to be on OpenGL 3.2+ */
-  glfwInit();
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
-  glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+  /*glfwInit();*/
+  //glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+  //glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+  //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+  /*glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);*/
 
 	/* Load the settings */
 	VoxSettings* m_pVoxSettings = new VoxSettings();

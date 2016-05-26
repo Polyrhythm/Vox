@@ -31,6 +31,6 @@ private:
 	Renderer* mpRenderer;
 	Camera* mpCamera;
 	
-  std::mutex m_animatedTextMutexLock;
+  tthread::mutex m_animatedTextMutexLock;
 	AnimatedTextList m_vpAnimatedTextList;
 };
