@@ -195,21 +195,21 @@ NPC::NPC(Renderer* pRenderer, ChunkManager* pChunkManager, Player* pPlayer, Ligh
 
 	if(characterSelectScreen)
 	{
-		sprintf(characterBaseFolder, "media/gamedata/models");
+		sprintf(characterBaseFolder, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models");
 		sprintf(qbFilename, "saves/characters/%s/%s.qb", modelName.c_str(), modelName.c_str());
-		sprintf(ms3dFilename, "media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
-		sprintf(animListFilename, "media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
+		sprintf(ms3dFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
+		sprintf(animListFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
 		sprintf(facesFilename, "saves/characters/%s/%s.faces", modelName.c_str(), modelName.c_str());
 		sprintf(characterFilename, "saves/characters/%s/%s.character", modelName.c_str(), modelName.c_str());
 	}
 	else
 	{
-		sprintf(characterBaseFolder, "media/gamedata/models");
-		sprintf(qbFilename, "media/gamedata/models/%s/%s.qb", m_type.c_str(), modelName.c_str());
-		sprintf(ms3dFilename, "media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
-		sprintf(animListFilename, "media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
-		sprintf(facesFilename, "media/gamedata/models/%s/%s.faces", m_type.c_str(), modelName.c_str());
-		sprintf(characterFilename, "media/gamedata/models/%s/%s.character", m_type.c_str(), modelName.c_str());
+		sprintf(characterBaseFolder, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models");
+		sprintf(qbFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.qb", m_type.c_str(), modelName.c_str());
+		sprintf(ms3dFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
+		sprintf(animListFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
+		sprintf(facesFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.faces", m_type.c_str(), modelName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.character", m_type.c_str(), modelName.c_str());
 	}
 
 	m_pVoxelCharacter->UnloadCharacter();
@@ -425,7 +425,7 @@ void NPC::SetNPCCombatType(eNPCCombatType eNPCCombatType, bool setWeaponModel)
 				// Add a quiver item to the enemy ranger
 				VoxelWeapon* pNewEquipment = new VoxelWeapon(m_pRenderer, m_pQubicleBinaryManager);
 				pNewEquipment->SetVoxelCharacterParent(NULL);
-				pNewEquipment->LoadWeapon("media/gamedata/items/Quiver/Quiver.item", false);
+				pNewEquipment->LoadWeapon("/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Quiver/Quiver.item", false);
 
 				pNewEquipment->GetAnimatedSection(0)->m_pVoxelObject->GetQubicleModel()->SetScaleAndOffsetForMatrix("Quiver", pNewEquipment->GetAnimatedSection(0)->m_renderScale, pNewEquipment->GetAnimatedSection(0)->m_renderOffset.x, pNewEquipment->GetAnimatedSection(0)->m_renderOffset.y, pNewEquipment->GetAnimatedSection(0)->m_renderOffset.z);
 				QubicleMatrix* pQuiverMatrix = pNewEquipment->GetAnimatedSection(0)->m_pVoxelObject->GetQubicleModel()->GetQubicleMatrix("Quiver");
@@ -1017,7 +1017,7 @@ void NPC::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 			m_pVoxelCharacter->AddQubicleMatrix(pBodyMatrix, false);
 
 			char characterFilename[128];
-			sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+			sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 			m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Body");
 		}
 		break;
@@ -1028,7 +1028,7 @@ void NPC::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 			m_pVoxelCharacter->AddQubicleMatrix(pLegsMatrix, false);
 
 			char characterFilename[128];
-			sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+			sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 			m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Legs");
 		}
 		break;
@@ -1049,7 +1049,7 @@ void NPC::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 			}
 
 			char characterFilename[128];
-			sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+			sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 			m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Right_Hand");
 			m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Left_Hand");
 		}
@@ -1071,7 +1071,7 @@ void NPC::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 			}
 
 			char characterFilename[128];
-			sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+			sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 			m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Right_Foot");
 			m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Left_Foot");
 		}
@@ -1465,7 +1465,7 @@ void NPC::DoDamage(float amount, Colour textColour, vec3 knockbackDirection, flo
 			// Do a hit particle effect
 			vec3 hitParticlePos = GetCenter() - (normalize(knockbackDirection) * m_radius);
 			unsigned int effectId = -1;
-			BlockParticleEffect* pBlockParticleEffect = VoxGame::GetInstance()->GetBlockParticleManager()->ImportParticleEffect("media/gamedata/particles/combat_hit.effect", hitParticlePos, &effectId);
+			BlockParticleEffect* pBlockParticleEffect = VoxGame::GetInstance()->GetBlockParticleManager()->ImportParticleEffect("/Users/ryanjones/Development/cpp/Vox/media/gamedata/particles/combat_hit.effect", hitParticlePos, &effectId);
 			pBlockParticleEffect->PlayEffect();
 		}
 
@@ -1769,7 +1769,7 @@ void NPC::Attack()
 				m_bIsChargingAttack = true;
 				m_chargeAmount = 0.0f;
 
-				LoadWeapon(false, "media/gamedata/items/Arrow/ArrowHold.item");
+				LoadWeapon(false, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Arrow/ArrowHold.item");
 
 				if(m_bIsIdle)
 				{
@@ -1846,7 +1846,7 @@ void NPC::ReleaseAttack()
 	{
 		UnloadWeapon(false);
 
-		Projectile* pProjectile = m_pProjectileManager->CreateProjectile(m_chargeSpawnPosition, m_chargeSpawnVelocity, 0.0f, "media/gamedata/items/Arrow/arrow.item", 0.08f);	
+		Projectile* pProjectile = m_pProjectileManager->CreateProjectile(m_chargeSpawnPosition, m_chargeSpawnVelocity, 0.0f, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Arrow/arrow.item", 0.08f);	
 		pProjectile->SetProjectileType(true, false, false);
 		pProjectile->SetOwner(NULL, this, NULL);
 
@@ -2591,7 +2591,7 @@ void NPC::UpdateWorking(float dt)
 				vec3 anvilHitPos = m_lookPoint + vec3(0.0f, 0.5f, 0.0f);
 
 				unsigned int effectId = -1;
-				BlockParticleEffect* pBlockParticleEffect = VoxGame::GetInstance()->GetBlockParticleManager()->ImportParticleEffect("media/gamedata/particles/anvil_hit.effect", anvilHitPos, &effectId);
+				BlockParticleEffect* pBlockParticleEffect = VoxGame::GetInstance()->GetBlockParticleManager()->ImportParticleEffect("/Users/ryanjones/Development/cpp/Vox/media/gamedata/particles/anvil_hit.effect", anvilHitPos, &effectId);
 				pBlockParticleEffect->PlayEffect();
 
 				// Stop weapon trails
@@ -3546,7 +3546,7 @@ void NPC::AttackEnabledDelayTimerFinished()
 
 		vec3 fireballSpawnVelocity = (normalize(toTarget) * powerAmount);
 
-		Projectile* pProjectile = m_pProjectileManager->CreateProjectile(fireballSpawnPosition, fireballSpawnVelocity, 0.0f, "media/gamedata/items/Fireball/Fireball.item", 0.04f);	
+		Projectile* pProjectile = m_pProjectileManager->CreateProjectile(fireballSpawnPosition, fireballSpawnVelocity, 0.0f, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Fireball/Fireball.item", 0.04f);	
 		pProjectile->SetProjectileType(true, false, false);
 		pProjectile->SetOwner(NULL, this, NULL);
 		pProjectile->SetGravityMultiplier(0.0f);
@@ -3570,7 +3570,7 @@ void NPC::AttackEnabledDelayTimerFinished()
 		vec3 toTarget = m_pTargetEnemy->GetProjectileHitboxCenter() - GetCenter();
 		vec3 spellSpawnVelocity = (normalize(toTarget) * powerAmount);
 
-		Projectile* pProjectile = m_pProjectileManager->CreateProjectile(spellSpawnPosition, spellSpawnVelocity, 0.0f, "media/gamedata/items/Fireball/FireballBlue.item", 0.05f);	
+		Projectile* pProjectile = m_pProjectileManager->CreateProjectile(spellSpawnPosition, spellSpawnVelocity, 0.0f, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Fireball/FireballBlue.item", 0.05f);	
 		pProjectile->SetProjectileType(true, false, false);
 		pProjectile->SetOwner(NULL, this, NULL);
 		pProjectile->SetGravityMultiplier(0.0f);

@@ -169,7 +169,7 @@ void EnemyManager::CreateEnemyCamp(vec3 campPosition)
 	pEnemy4->SetRandomTargetMode(false);
 	pEnemy4->SetTargetForwardToLookAtPoint(campPosition);
 
-	Item* pCampFire = m_pItemManager->CreateItem(campPosition, vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 45.0f, 0.0f), "media/gamedata/items/CampFire/CampFire.item", eItem_CampFire, "Camp Fire", false, false, 0.08f);
+	Item* pCampFire = m_pItemManager->CreateItem(campPosition, vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 45.0f, 0.0f), "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/CampFire/CampFire.item", eItem_CampFire, "Camp Fire", false, false, 0.08f);
 }
 
 EnemySpawner* EnemyManager::CreateEnemySpawner(vec3 position, vec3 direction)

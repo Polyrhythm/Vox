@@ -2,7 +2,7 @@ offset: 0 5.5 0
 scale: 1.0
 
 numAnimatedSections: 1
-qubicleFile: media/gamedata/items/Heart/heart.qb
+qubicleFile: /Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Heart/heart.qb
 renderScale: 1.0
 renderOffset: 0 0 0
 autoStartAnimation: 0

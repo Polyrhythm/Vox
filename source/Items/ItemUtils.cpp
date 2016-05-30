@@ -133,46 +133,46 @@ string GetItemFilenameForType(eItem type)
 		// Dropped item in the world
 		case eItem_DroppedItem:		{ return ""; } break;
 		// Herts and coins dropped from killing enemies
-		case eItem_Coin:			{ return "media/gamedata/items/Coin/Coin.item"; } break;
-		case eItem_Heart:			{ return "media/gamedata/items/Heart/Heart.item"; } break;
+		case eItem_Coin:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Coin/Coin.item"; } break;
+		case eItem_Heart:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Heart/Heart.item"; } break;
 		// Zombie gib
-		case eItem_Gib:				{ return "media/gamedata/items/Hand1Gib.item"; } break;
+		case eItem_Gib:				{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Hand1Gib.item"; } break;
 		// Interactable items
-		case eItem_Tombstone:		{ return "media/gamedata/items/Tombstone/Tombstone1.item"; } break;
-		case eItem_Chest:			{ return "media/gamedata/items/Chest/Chest.item"; } break;
-		case eItem_Torch:			{ return "media/gamedata/items/Torch/Torch.item"; } break;
-		case eItem_Furnace:			{ return "media/gamedata/items/Furnace/Furnace.item"; } break;
-		case eItem_Anvil:			{ return "media/gamedata/items/Anvil/Anvil.item"; } break;
-		case eItem_QuestBoard:		{ return "media/gamedata/items/QuestBoard/QuestBoard.item"; } break;
-		case eItem_CampFire:		{ return "media/gamedata/items/CampFire/CampFire.item"; } break;
-		case eItem_Mannequin:		{ return "media/gamedata/items/Mannequin/Mannequin.item"; } break;
+		case eItem_Tombstone:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Tombstone/Tombstone1.item"; } break;
+		case eItem_Chest:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Chest/Chest.item"; } break;
+		case eItem_Torch:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Torch/Torch.item"; } break;
+		case eItem_Furnace:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Furnace/Furnace.item"; } break;
+		case eItem_Anvil:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Anvil/Anvil.item"; } break;
+		case eItem_QuestBoard:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/QuestBoard/QuestBoard.item"; } break;
+		case eItem_CampFire:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/CampFire/CampFire.item"; } break;
+		case eItem_Mannequin:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Mannequin/Mannequin.item"; } break;
 		// Ingredients
-		case eItem_SlimeJelly:		{ return "media/gamedata/items/SlimeJelly/SlimeJelly.item"; } break;
-		case eItem_BeeWing:			{ return "media/gamedata/items/BeeWing/BeeWing.item"; } break;
-		case eItem_Bone:			{ return "media/gamedata/items/Bone/Bone.item"; } break;
+		case eItem_SlimeJelly:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/SlimeJelly/SlimeJelly.item"; } break;
+		case eItem_BeeWing:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/BeeWing/BeeWing.item"; } break;
+		case eItem_Bone:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Bone/Bone.item"; } break;
 		// Ore and mining
-		case eItem_CopperVein:		{ return "media/gamedata/items/CopperVein/CopperVein0.item"; } break;
-		case eItem_CopperOre:		{ return "media/gamedata/items/CopperOre/CopperOre.item"; } break;
-		case eItem_CopperBar:		{ return "media/gamedata/items/CopperBar/CopperBar.item"; } break;
-		case eItem_IronVein:		{ return "media/gamedata/items/IronVein/IronVein0.item"; } break;
-		case eItem_IronOre:			{ return "media/gamedata/items/IronOre/IronOre.item"; } break;
-		case eItem_IronBar:			{ return "media/gamedata/items/IronBar/IronBar.item"; } break;
-		case eItem_SilverVein:		{ return "media/gamedata/items/SilverVein/SilverVein0.item"; } break;
-		case eItem_SilverOre:		{ return "media/gamedata/items/SilverOre/SilverOre.item"; } break;
-		case eItem_SilverBar:		{ return "media/gamedata/items/SilverBar/SilverBar.item"; } break;
-		case eItem_GoldVein:		{ return "media/gamedata/items/GoldVein/GoldVein0.item"; } break;
-		case eItem_GoldOre:			{ return "media/gamedata/items/GoldOre/GoldOre.item"; } break;
-		case eItem_GoldBar:			{ return "media/gamedata/items/GoldBar/GoldBar.item"; } break;
+		case eItem_CopperVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/CopperVein/CopperVein0.item"; } break;
+		case eItem_CopperOre:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/CopperOre/CopperOre.item"; } break;
+		case eItem_CopperBar:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/CopperBar/CopperBar.item"; } break;
+		case eItem_IronVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/IronVein/IronVein0.item"; } break;
+		case eItem_IronOre:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/IronOre/IronOre.item"; } break;
+		case eItem_IronBar:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/IronBar/IronBar.item"; } break;
+		case eItem_SilverVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/SilverVein/SilverVein0.item"; } break;
+		case eItem_SilverOre:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/SilverOre/SilverOre.item"; } break;
+		case eItem_SilverBar:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/SilverBar/SilverBar.item"; } break;
+		case eItem_GoldVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/GoldVein/GoldVein0.item"; } break;
+		case eItem_GoldOre:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/GoldOre/GoldOre.item"; } break;
+		case eItem_GoldBar:			{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/GoldBar/GoldBar.item"; } break;
 		// World blocks
-		case eItem_Block_Grass:		{ return "media/gamedata/items/Block_Grass/Block_Grass.item"; } break;
-		case eItem_Block_Dirt:		{ return "media/gamedata/items/Block_Dirt/Block_Dirt.item"; } break;
-		case eItem_Block_Stone:		{ return "media/gamedata/items/Block_Stone/Block_Stone.item"; } break;
-		case eItem_Block_Wood:		{ return "media/gamedata/items/Block_Wood/Block_Wood.item"; } break;
-		case eItem_Block_Leaf:		{ return "media/gamedata/items/Block_Lead/Block_Lead.item"; } break;
-		case eItem_Block_Sand:		{ return "media/gamedata/items/Block_Sand/Block_Sand.item"; } break;
-		case eItem_Block_Cactus:	{ return "media/gamedata/items/Block_Cactus/Block_Cactus.item"; } break;
-		case eItem_Block_Rock:		{ return "media/gamedata/items/Block_Rock/Block_Rock.item"; } break;
-		case eItem_Block_Snow:		{ return "media/gamedata/items/Block_Snow/Block_Snow.item"; } break;
+		case eItem_Block_Grass:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Grass/Block_Grass.item"; } break;
+		case eItem_Block_Dirt:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Dirt/Block_Dirt.item"; } break;
+		case eItem_Block_Stone:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Stone/Block_Stone.item"; } break;
+		case eItem_Block_Wood:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Wood/Block_Wood.item"; } break;
+		case eItem_Block_Leaf:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Lead/Block_Lead.item"; } break;
+		case eItem_Block_Sand:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Sand/Block_Sand.item"; } break;
+		case eItem_Block_Cactus:	{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Cactus/Block_Cactus.item"; } break;
+		case eItem_Block_Rock:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Rock/Block_Rock.item"; } break;
+		case eItem_Block_Snow:		{ return "/Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Block_Snow/Block_Snow.item"; } break;
 	}
 
 	cout << "Warning: Reached end of GetItemFilenameForType() without finding type - " << type << ".\n";
@@ -188,46 +188,46 @@ string GetItemTextureForType(eItem type)
 		// Dropped item in the world
 		case eItem_DroppedItem:		{ return ""; } break;
 		// Herts and coins dropped from killing enemies
-		case eItem_Coin:			{ return "media/textures/items/coin.tga"; } break;
-		case eItem_Heart:			{ return "media/textures/items/heart.tga"; } break;
+		case eItem_Coin:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/coin.tga"; } break;
+		case eItem_Heart:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/heart.tga"; } break;
 		// Zombie gib
-		case eItem_Gib:				{ return "media/textures/items/question_mark.tga"; } break;
+		case eItem_Gib:				{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/question_mark.tga"; } break;
 		// Interactable items
-		case eItem_Tombstone:		{ return "media/textures/items/tombstone.tga"; } break;
-		case eItem_Chest:			{ return "media/textures/items/chest.tga"; } break;
-		case eItem_Torch:			{ return "media/textures/items/torch.tga"; } break;
-		case eItem_Furnace:			{ return "media/textures/items/furnace.tga"; } break;
-		case eItem_Anvil:			{ return "media/textures/items/anvil.tga"; } break;
-		case eItem_QuestBoard:		{ return "media/textures/items/quest_board.tga"; } break;
-		case eItem_CampFire:		{ return "media/textures/items/camp_fire.tga"; } break;
-		case eItem_Mannequin:		{ return "media/textures/items/mannequin.tga"; } break;
+		case eItem_Tombstone:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/tombstone.tga"; } break;
+		case eItem_Chest:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/chest.tga"; } break;
+		case eItem_Torch:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/torch.tga"; } break;
+		case eItem_Furnace:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/furnace.tga"; } break;
+		case eItem_Anvil:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/anvil.tga"; } break;
+		case eItem_QuestBoard:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/quest_board.tga"; } break;
+		case eItem_CampFire:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/camp_fire.tga"; } break;
+		case eItem_Mannequin:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/mannequin.tga"; } break;
 		// Ingredients
-		case eItem_SlimeJelly:		{ return "media/textures/items/slime_jelly.tga"; } break;
-		case eItem_BeeWing:			{ return "media/textures/items/bee_wing.tga"; } break;
-		case eItem_Bone:			{ return "media/textures/items/bone.tga"; } break;
+		case eItem_SlimeJelly:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/slime_jelly.tga"; } break;
+		case eItem_BeeWing:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/bee_wing.tga"; } break;
+		case eItem_Bone:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/bone.tga"; } break;
 		// Ore and mining
-		case eItem_CopperVein:		{ return "media/textures/items/question_mark.tga"; } break;
-		case eItem_CopperOre:		{ return "media/textures/items/copper_ore.tga"; } break;
-		case eItem_CopperBar:		{ return "media/textures/items/copper_bar.tga"; } break;
-		case eItem_IronVein:		{ return "media/textures/items/question_mark.tga"; } break;
-		case eItem_IronOre:			{ return "media/textures/items/iron_ore.tga"; } break;
-		case eItem_IronBar:			{ return "media/textures/items/iron_bar.tga"; } break;
-		case eItem_SilverVein:		{ return "media/textures/items/question_mark.tga"; } break;
-		case eItem_SilverOre:		{ return "media/textures/items/silver_ore.tga"; } break;
-		case eItem_SilverBar:		{ return "media/textures/items/silver_bar.tga"; } break;
-		case eItem_GoldVein:		{ return "media/textures/items/question_mark.tga"; } break;
-		case eItem_GoldOre:			{ return "media/textures/items/gold_ore.tga"; } break;
-		case eItem_GoldBar:			{ return "media/textures/items/gold_bar.tga"; } break;
+		case eItem_CopperVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/question_mark.tga"; } break;
+		case eItem_CopperOre:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/copper_ore.tga"; } break;
+		case eItem_CopperBar:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/copper_bar.tga"; } break;
+		case eItem_IronVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/question_mark.tga"; } break;
+		case eItem_IronOre:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/iron_ore.tga"; } break;
+		case eItem_IronBar:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/iron_bar.tga"; } break;
+		case eItem_SilverVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/question_mark.tga"; } break;
+		case eItem_SilverOre:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/silver_ore.tga"; } break;
+		case eItem_SilverBar:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/silver_bar.tga"; } break;
+		case eItem_GoldVein:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/question_mark.tga"; } break;
+		case eItem_GoldOre:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/gold_ore.tga"; } break;
+		case eItem_GoldBar:			{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/gold_bar.tga"; } break;
 		// World blocks
-		case eItem_Block_Grass:		{ return "media/textures/items/block_grass.tga"; } break;
-		case eItem_Block_Dirt:		{ return "media/textures/items/block_dirt.tga"; } break;
-		case eItem_Block_Stone:		{ return "media/textures/items/block_stone.tga"; } break;
-		case eItem_Block_Wood:		{ return "media/textures/items/block_wood.tga"; } break;
-		case eItem_Block_Leaf:		{ return "media/textures/items/block_leaf.tga"; } break;
-		case eItem_Block_Sand:		{ return "media/textures/items/block_sand.tga"; } break;
-		case eItem_Block_Cactus:	{ return "media/textures/items/block_cactus.tga"; } break;
-		case eItem_Block_Rock:		{ return "media/textures/items/block_rock.tga"; } break;
-		case eItem_Block_Snow:		{ return "media/textures/items/block_snow.tga"; } break;
+		case eItem_Block_Grass:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_grass.tga"; } break;
+		case eItem_Block_Dirt:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_dirt.tga"; } break;
+		case eItem_Block_Stone:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_stone.tga"; } break;
+		case eItem_Block_Wood:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_wood.tga"; } break;
+		case eItem_Block_Leaf:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_leaf.tga"; } break;
+		case eItem_Block_Sand:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_sand.tga"; } break;
+		case eItem_Block_Cactus:	{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_cactus.tga"; } break;
+		case eItem_Block_Rock:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_rock.tga"; } break;
+		case eItem_Block_Snow:		{ return "/Users/ryanjones/Development/cpp/Vox/media/textures/items/block_snow.tga"; } break;
 	}
 
 	cout << "Warning: Reached end of GetItemTextureForType() without finding type - " << type << ".\n";

@@ -82,7 +82,7 @@ void PauseMenu::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/PauseMenu/pause_background.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/PauseMenu/pause_background.tga";
 	m_pBackgroundIcon->SetIcon(iconName);
 
 	m_pFrontendManager->SetButtonIcons(m_pResumeButton, ButtonSize_110x47);

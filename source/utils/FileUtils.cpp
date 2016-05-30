@@ -13,7 +13,7 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#elif __linux__
+#elif defined(__linux__) || defined(__APPLE__)
 #include <sys/types.h>
 #include <dirent.h>
 #include <errno.h>
@@ -76,7 +76,7 @@ vector<string> listFilesInDirectory(string directoryName)
 	}
 
 	return listFileNames;
-#elif __linux__
+#elif defined(__linux__) || defined(__APPLE__)
 	directoryName = directoryName.substr(0, directoryName.length() - 3);
 	vector<string> listFileNames;
 	DIR *dp;

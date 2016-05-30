@@ -216,32 +216,32 @@ void LootGUI::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/common/items/border_common.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_common.tga";
 	m_pLootButtonBackgroundSlotBorder_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
 	m_pLootButtonBackgroundSlotBorder_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_magical.tga";
 	m_pLootButtonBackgroundSlotBorder_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_rare.tga";
 	m_pLootButtonBackgroundSlotBorder_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_epic.tga";
 	m_pLootButtonBackgroundSlotBorder_Epic->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
 	m_pTooltipBackground_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
 	m_pTooltipBackground_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
 	m_pTooltipBackground_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
 	m_pTooltipBackground_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
 	m_pTooltipBackground_Epic->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/LootGUI/loot_title_icon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/LootGUI/loot_title_icon.tga";
 	m_pTitleBarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/LootGUI/loot_window_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/LootGUI/loot_window_background.tga";
 	m_pLootWindowBackgroundIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/LootGUI/titlebar_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/LootGUI/titlebar_background.tga";
 	m_pTitleBarBackgroundIcon->SetIcon(iconName);
 
 	m_pLootWindow->SetBackgroundIcon(m_pLootWindowBackgroundIcon);
@@ -507,31 +507,31 @@ void LootGUI::CreateLootItems()
 			{
 				case ItemQuality_Common:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Uncommon:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Magical:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Rare:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Epic:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
@@ -794,7 +794,7 @@ void LootGUI::LootItemPressed(LootSlotItem* pLootItem)
     m_pPressedLootSlotItem->m_pInventoryIcon->SetDepth(5.0f);
 	//m_pPressedLootSlotItem->m_pInventoryIcon->SetLocation(m_pressedX - 4, m_pressedY + 4);
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-	string dropShadowIcon = "media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
+	string dropShadowIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
 	m_pPressedLootSlotItem->m_pInventoryIcon->AddIcon(m_pRenderer, dropShadowIcon.c_str(), 64, 64, 64, 64, 4, -4, 0.5f);
 	m_pLootWindow->DepthSortComponentChildren();
 
@@ -1047,7 +1047,7 @@ void LootGUI::LootItemReleased(LootSlotItem* pLootItem)
 	{
 		pLootItem->m_pInventoryIcon->SetLocation(m_pressedX, m_pressedY);
 		string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-		string dropShadowIcon = "media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
+		string dropShadowIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
 		pLootItem->m_pInventoryIcon->RemoveIcon(dropShadowIcon.c_str());
 	}
 
@@ -1056,7 +1056,7 @@ void LootGUI::LootItemReleased(LootSlotItem* pLootItem)
 		// Revert depth back to normal for loot icons
 		pLootItem->m_pInventoryIcon->SetDepth(3.0f);
 		string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-		string dropShadowIcon = "media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
+		string dropShadowIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
 		pLootItem->m_pInventoryIcon->RemoveIcon(dropShadowIcon.c_str());
 		m_pLootWindow->DepthSortComponentChildren();
 	}

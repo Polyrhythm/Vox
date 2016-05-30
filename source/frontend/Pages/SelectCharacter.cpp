@@ -160,10 +160,10 @@ void SelectCharacter::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/common/popup_background.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/popup_background.tga";
 	m_pPopupBackgroundIcon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
 	m_pTooltipBackground->SetIcon(iconName);
 
 	m_pFrontendManager->SetButtonIcons(m_pPopupConfirmButton, ButtonSize_110x47);

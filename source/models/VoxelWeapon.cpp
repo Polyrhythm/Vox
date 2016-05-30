@@ -93,6 +93,11 @@ void VoxelWeapon::LoadWeapon(const char *weaponFilename, bool useManager)
 
 	// Open the file
 	file.open(weaponFilename, ios::in);
+
+  if (!file.is_open()) {
+    cout << "Shit's borked: " << strerror(errno) << "\n";
+  }
+
 	if(file.is_open())
 	{
 		string tempString;

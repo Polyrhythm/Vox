@@ -34,14 +34,14 @@ InstanceManager::InstanceManager(Renderer* pRenderer)
 	{
 		vec3 pos = vec3(GetRandomNumber(-50, 50, 2), 7.5f, GetRandomNumber(-50, 50, 2));
 		vec3 rot = vec3(0.0f, GetRandomNumber(0, 360, 2), 0.0f);
-		AddInstanceObject("media/gamedata/terrain/plains/flower1.qb", pos, rot, 0.08f, NULL, 0, 0, 0);
+		AddInstanceObject("/Users/ryanjones/Development/cpp/Vox/media/gamedata/terrain/plains/flower1.qb", pos, rot, 0.08f, NULL, 0, 0, 0);
 	}
 
 	for(int i = 0; i < 100; i++)
 	{
 		vec3 pos = vec3(GetRandomNumber(-50, 50, 2), 7.5f, GetRandomNumber(-50, 50, 2));
 		vec3 rot = vec3(0.0f, GetRandomNumber(0, 360, 2), 0.0f);
-		AddInstanceObject("media/gamedata/terrain/plains/smalltree2.qb", pos, rot, 0.1f, NULL, 0, 0, 0);
+		AddInstanceObject("/Users/ryanjones/Development/cpp/Vox/media/gamedata/terrain/plains/smalltree2.qb", pos, rot, 0.1f, NULL, 0, 0, 0);
 	}
 	*/
 }

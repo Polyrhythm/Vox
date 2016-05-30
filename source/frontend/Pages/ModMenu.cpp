@@ -296,7 +296,7 @@ void ModMenu::SelectLoadedMods()
 				{
 					m_vpModButtonData[j]->m_toggled = true;
 					string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-					string tickIcon = "media/textures/gui/" + themeName + "/common/tick.tga";
+					string tickIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tick.tga";
 					m_vpModButtonData[j]->m_pModButton->AddIcon(m_pRenderer, tickIcon.c_str(), 32, 32, 32, 32, buttonWidth - 38, 4, 3.25f);
 				}
 			}
@@ -315,11 +315,11 @@ void ModMenu::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/ModMenu/mod_title_icon.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/ModMenu/mod_title_icon.tga";
 	m_pTitleBarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/ModMenu/mod_window_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/ModMenu/mod_window_background.tga";
 	m_pModWindowBackgroundIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/ModMenu/titlebar_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/ModMenu/titlebar_background.tga";
 	m_pTitleBarBackgroundIcon->SetIcon(iconName);
 
 	m_pModWindow->SetBackgroundIcon(m_pModWindowBackgroundIcon);
@@ -372,15 +372,15 @@ void ModMenu::SkinGUI()
 	textWidth = m_pRenderer->GetFreeTypeTextWidth(m_pFrontendManager->GetFrontendFont_18_Outline(), "%s", m_pMiscMode->GetLabel().GetText().c_str());
 	m_pMiscMode->SetLabelPosition((int)(75 * 0.5f - textWidth*0.5f), 8);
 
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
 	m_pTooltipBackground_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
 	m_pTooltipBackground_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
 	m_pTooltipBackground_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
 	m_pTooltipBackground_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
 	m_pTooltipBackground_Epic->SetIcon(iconName);
 
 	m_pGameplayMode->SetLabelColour(m_pFrontendManager->GetNormalFontColour());
@@ -459,7 +459,7 @@ void ModMenu::CreateGameplayModButtons()
 	int buttonY = m_modWindowHeight - buttonHeight - 17;
 
 	char importDirectory[128];
-	sprintf(importDirectory, "media/mods/gameplay/*.*");
+	sprintf(importDirectory, "/Users/ryanjones/Development/cpp/Vox/media/mods/gameplay/*.*");
 
 	vector<string> listFiles;
 	listFiles = listFilesInDirectory(importDirectory);
@@ -484,7 +484,7 @@ void ModMenu::CreateGameplayModButtons()
 
 			// Add thumbnail icon
 			char lThumbnailIcon[128];
-			sprintf(lThumbnailIcon, "media/mods/gameplay/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
+			sprintf(lThumbnailIcon, "/Users/ryanjones/Development/cpp/Vox/media/mods/gameplay/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
 			m_pNewButton->AddIcon(m_pRenderer, lThumbnailIcon, buttonWidth, buttonHeight, buttonWidth - 16, buttonHeight - 16, 8, 8, 2.5f);
 
 			// Add header text
@@ -504,7 +504,7 @@ void ModMenu::CreateGameplayModButtons()
 			pModButtonData->m_miscButton = false;
 
 			// Load the meta data file for the mod description and author
-			string settingsIniFile = "media/mods/gameplay/" + listFiles[modButtonCounter] + "/description.ini";
+			string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/mods/gameplay/" + listFiles[modButtonCounter] + "/description.ini";
 			INIReader reader(settingsIniFile);
 
 			if (reader.ParseError() >= 0)
@@ -562,7 +562,7 @@ void ModMenu::CreateGraphicsModButtons()
 	int buttonY = m_modWindowHeight - buttonHeight - 17;
 
 	char importDirectory[128];
-	sprintf(importDirectory, "media/graphics/*.*");
+	sprintf(importDirectory, "/Users/ryanjones/Development/cpp/Vox/media/graphics/*.*");
 
 	vector<string> listFiles;
 	listFiles = listFilesInDirectory(importDirectory);
@@ -587,7 +587,7 @@ void ModMenu::CreateGraphicsModButtons()
 
 			// Add thumbnail icon
 			char lThumbnailIcon[128];
-			sprintf(lThumbnailIcon, "media/graphics/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
+			sprintf(lThumbnailIcon, "/Users/ryanjones/Development/cpp/Vox/media/graphics/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
 			m_pNewButton->AddIcon(m_pRenderer, lThumbnailIcon, buttonWidth, buttonHeight, buttonWidth - 16, buttonHeight - 16, 8, 8, 2.5f);
 
 			// Add header text
@@ -607,7 +607,7 @@ void ModMenu::CreateGraphicsModButtons()
 			pModButtonData->m_miscButton = false;
 
 			// Load the meta data file for the mod description and author
-			string settingsIniFile = "media/graphics/" + listFiles[modButtonCounter] + "/description.ini";
+			string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/graphics/" + listFiles[modButtonCounter] + "/description.ini";
 			INIReader reader(settingsIniFile);
 
 			if (reader.ParseError() >= 0)
@@ -665,7 +665,7 @@ void ModMenu::CreateSoundModButtons()
 	int buttonY = m_modWindowHeight - buttonHeight - 17;
 
 	char importDirectory[128];
-	sprintf(importDirectory, "media/audio/*.*");
+	sprintf(importDirectory, "/Users/ryanjones/Development/cpp/Vox/media/audio/*.*");
 
 	vector<string> listFiles;
 	listFiles = listFilesInDirectory(importDirectory);
@@ -690,7 +690,7 @@ void ModMenu::CreateSoundModButtons()
 
 			// Add thumbnail icon
 			char lThumbnailIcon[128];
-			sprintf(lThumbnailIcon, "media/audio/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
+			sprintf(lThumbnailIcon, "/Users/ryanjones/Development/cpp/Vox/media/audio/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
 			m_pNewButton->AddIcon(m_pRenderer, lThumbnailIcon, buttonWidth, buttonHeight, buttonWidth - 16, buttonHeight - 16, 8, 8, 2.5f);
 
 			// Add header text
@@ -710,7 +710,7 @@ void ModMenu::CreateSoundModButtons()
 			pModButtonData->m_miscButton = false;
 
 			// Load the meta data file for the mod description and author
-			string settingsIniFile = "media/audio/" + listFiles[modButtonCounter] + "/description.ini";
+			string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/audio/" + listFiles[modButtonCounter] + "/description.ini";
 			INIReader reader(settingsIniFile);
 
 			if (reader.ParseError() >= 0)
@@ -768,7 +768,7 @@ void ModMenu::CreateHUDModButtons()
 	int buttonY = m_modWindowHeight - buttonHeight - 17;
 
 	char importDirectory[128];
-	sprintf(importDirectory, "media/textures/gui/*.*");
+	sprintf(importDirectory, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/*.*");
 
 	vector<string> listFiles;
 	listFiles = listFilesInDirectory(importDirectory);
@@ -793,7 +793,7 @@ void ModMenu::CreateHUDModButtons()
 
 			// Add thumbnail icon
 			char lThumbnailIcon[128];
-			sprintf(lThumbnailIcon, "media/textures/gui/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
+			sprintf(lThumbnailIcon, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
 			m_pNewButton->AddIcon(m_pRenderer, lThumbnailIcon, buttonWidth, buttonHeight, buttonWidth - 16, buttonHeight - 16, 8, 8, 2.5f);
 
 			// Add header text
@@ -813,7 +813,7 @@ void ModMenu::CreateHUDModButtons()
 			pModButtonData->m_miscButton = false;
 
 			// Load the meta data file for the mod description and author
-			string settingsIniFile = "media/textures/gui/" + listFiles[modButtonCounter] + "/description.ini";
+			string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + listFiles[modButtonCounter] + "/description.ini";
 			INIReader reader(settingsIniFile);
 
 			if (reader.ParseError() >= 0)
@@ -871,7 +871,7 @@ void ModMenu::CreateMiscModButtons()
 	int buttonY = m_modWindowHeight - buttonHeight - 17;
 
 	char importDirectory[128];
-	sprintf(importDirectory, "media/mods/misc/*.*");
+	sprintf(importDirectory, "/Users/ryanjones/Development/cpp/Vox/media/mods/misc/*.*");
 
 	vector<string> listFiles;
 	listFiles = listFilesInDirectory(importDirectory);
@@ -896,7 +896,7 @@ void ModMenu::CreateMiscModButtons()
 
 			// Add thumbnail icon
 			char lThumbnailIcon[128];
-			sprintf(lThumbnailIcon, "media/mods/misc/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
+			sprintf(lThumbnailIcon, "/Users/ryanjones/Development/cpp/Vox/media/mods/misc/%s/thumbnail.tga", listFiles[modButtonCounter].c_str());
 			m_pNewButton->AddIcon(m_pRenderer, lThumbnailIcon, buttonWidth, buttonHeight, buttonWidth - 16, buttonHeight - 16, 8, 8, 2.5f);
 
 			// Add header text
@@ -916,7 +916,7 @@ void ModMenu::CreateMiscModButtons()
 			pModButtonData->m_miscButton = true;
 
 			// Load the meta data file for the mod description and author
-			string settingsIniFile = "media/mods/misc/" + listFiles[modButtonCounter] + "/description.ini";
+			string settingsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/mods/misc/" + listFiles[modButtonCounter] + "/description.ini";
 			INIReader reader(settingsIniFile);
 
 			if (reader.ParseError() >= 0)
@@ -1506,7 +1506,7 @@ void ModMenu::ModButtonPressed(ModButtonData* pModButtonData)
 				{
 					m_vpModButtonData[i]->m_toggled = false;
 					string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-					string tickIcon = "media/textures/gui/" + themeName + "/common/tick.tga";
+					string tickIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tick.tga";
 					m_vpModButtonData[i]->m_pModButton->RemoveIcon(tickIcon.c_str());
 					VoxGame::GetInstance()->GetModsManager()->RemoveMod(m_vpModButtonData[i]->m_modName, m_vpModButtonData[i]->m_gameplayButton, m_vpModButtonData[i]->m_graphicsButton, m_vpModButtonData[i]->m_soundButton, m_vpModButtonData[i]->m_HUDButton, m_vpModButtonData[i]->m_miscButton);
 				}
@@ -1524,7 +1524,7 @@ void ModMenu::ModButtonPressed(ModButtonData* pModButtonData)
 			{
 				m_vpModButtonData[i]->m_toggled = false;
 				string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-				string tickIcon = "media/textures/gui/" + themeName + "/common/tick.tga";
+				string tickIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tick.tga";
 				m_vpModButtonData[i]->m_pModButton->RemoveIcon(tickIcon.c_str());
 				VoxGame::GetInstance()->GetModsManager()->RemoveMod(m_vpModButtonData[i]->m_modName, m_vpModButtonData[i]->m_gameplayButton, m_vpModButtonData[i]->m_graphicsButton, m_vpModButtonData[i]->m_soundButton, m_vpModButtonData[i]->m_HUDButton, m_vpModButtonData[i]->m_miscButton);
 			}
@@ -1550,7 +1550,7 @@ void ModMenu::ModButtonPressed(ModButtonData* pModButtonData)
 	if (addTick)
 	{
 		string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-		string tickIcon = "media/textures/gui/" + themeName + "/common/tick.tga";
+		string tickIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/tick.tga";
 		pModButtonData->m_pModButton->AddIcon(m_pRenderer, tickIcon.c_str(), 32, 32, 32, 32, buttonWidth - 38, 4, 3.25f);
 	}
 }

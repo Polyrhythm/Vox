@@ -148,7 +148,7 @@ void QuestJournal::ExportQuestJournal(int playerNum)
 {
 	ofstream exportFile;
 	char lfilename[128];
-	sprintf(lfilename, "media/characters/character%i/journal.quests", playerNum);
+	sprintf(lfilename, "/Users/ryanjones/Development/cpp/Vox/media/characters/character%i/journal.quests", playerNum);
 	exportFile.open(lfilename); 
 
 	if(exportFile.is_open())
@@ -177,7 +177,7 @@ void QuestJournal::ImportQuestJournal(int playerNum)
 
 	ifstream importFile;
 	char lfilename[128];
-	sprintf(lfilename, "media/characters/character%i/journal.quests", playerNum);
+	sprintf(lfilename, "/Users/ryanjones/Development/cpp/Vox/media/characters/character%i/journal.quests", playerNum);
 	importFile.open(lfilename);
 
 	if(importFile.is_open())

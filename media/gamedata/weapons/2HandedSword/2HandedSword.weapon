@@ -2,7 +2,7 @@ offset: 0 17 0
 scale: 0.75
 
 numAnimatedSections: 1
-qubicleFile: media/gamedata/weapons/2HandedSword/2HandedSword.qb
+qubicleFile: /Users/ryanjones/development/cpp/Vox/media/gamedata/weapons/2HandedSword/2HandedSword.qb
 renderScale: 1.0
 renderOffset: 0 0 0
 autoStartAnimation: 0

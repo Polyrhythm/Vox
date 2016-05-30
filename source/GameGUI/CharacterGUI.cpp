@@ -478,53 +478,53 @@ void CharacterGUI::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/common/items/border_common.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_common.tga";
 	m_pInventoryBackgroundSlotBorder_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
 	m_pInventoryBackgroundSlotBorder_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_magical.tga";
 	m_pInventoryBackgroundSlotBorder_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_rare.tga";
 	m_pInventoryBackgroundSlotBorder_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_epic.tga";
 	m_pInventoryBackgroundSlotBorder_Epic->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
 	m_pTooltipBackground_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
 	m_pTooltipBackground_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
 	m_pTooltipBackground_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
 	m_pTooltipBackground_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
 	m_pTooltipBackground_Epic->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_left.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_left.tga";
 	m_pTabOpenCloseButton_Icon_Left->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_left_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_left_hover.tga";
 	m_pTabOpenCloseButton_Icon_Left_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_left_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_left_pressed.tga";
 	m_pTabOpenCloseButton_Icon_Left_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_right.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_right.tga";
 	m_pTabOpenCloseButton_Icon_Right->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_right_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_right_hover.tga";
 	m_pTabOpenCloseButton_Icon_Right_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_right_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/tab_openclose_right_pressed.tga";
 	m_pTabOpenCloseButton_Icon_Right_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/stats_tab_left.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/stats_tab_left.tga";
 	m_pStatsTab_Icon_Left->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/stats_tab_right.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/stats_tab_right.tga";
 	m_pStatsTab_Icon_Right->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/equip_hover_highlight.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/equip_hover_highlight.tga";
 	m_pEquipHoverIcon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/character_title_icon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/character_title_icon.tga";
 	m_pTitleBarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/character_window_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/character_window_background.tga";
 	m_pCharacterWindowBackgroundIcon->SetIcon(iconName);
 	m_pCharacterWindowBackgroundIcon->SetDepth(2.0f);
-	iconName = "media/textures/gui/" + themeName + "/CharacterGUI/titlebar_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CharacterGUI/titlebar_background.tga";
 	m_pTitleBarBackgroundIcon->SetIcon(iconName);
 
 	m_pCharacterWindow->SetBackgroundIcon(m_pCharacterWindowBackgroundIcon);
@@ -713,31 +713,31 @@ void CharacterGUI::CreateInventoryItems()
 			{
 				case ItemQuality_Common:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Uncommon:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Magical:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Rare:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
 				case ItemQuality_Epic:
 				{
-					string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
+					string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
 					pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 					break;
 				}
@@ -786,7 +786,7 @@ void CharacterGUI::CreateInventoryItems()
 				pBlockSlotItem = new Icon(m_pRenderer);
 				pBlockSlotItem->SetIcon(m_pInventoryBackgroundSlotBorder_Common);
 				string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-				string itemForegroundIcon = "media/textures/gui/" + themeName + "/common/items/item_foreground_alpha.tga";
+				string itemForegroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_foreground_alpha.tga";
 				pBlockSlotItem->AddIcon(m_pRenderer, itemForegroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 3.0f);
 
 				char lItemTexture[128];
@@ -809,7 +809,7 @@ void CharacterGUI::CreateInventoryItems()
 				pBlockSlotItem = new Icon(m_pRenderer);
 				pBlockSlotItem->SetIcon(m_pInventoryBackgroundSlotBorder_Common);
 				string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-				string itemForegroundIcon = "media/textures/gui/" + themeName + "/common/items/item_foreground_alpha.tga";
+				string itemForegroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_foreground_alpha.tga";
 				pBlockSlotItem->AddIcon(m_pRenderer, itemForegroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 3.0f);
 
 				char lItemTexture[128];
@@ -1520,7 +1520,7 @@ void CharacterGUI::CharacterItemPressed(CharacterSlotItem* pCharacterItem)
 	m_pPressedCharacterItem->m_pInventoryIcon->SetDepth(5.0f);
 	//m_pPressedCharacterItem->m_pInventoryIcon->SetLocation(m_pressedX - 4, m_pressedY + 4);
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-	string dropShadowIcon = "media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
+	string dropShadowIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
 	m_pPressedCharacterItem->m_pInventoryIcon->AddIcon(m_pRenderer, dropShadowIcon.c_str(), 64, 64, 64, 64, 4, -4, 0.5f);
 	m_pCharacterWindow->DepthSortComponentChildren();
 
@@ -1744,7 +1744,7 @@ void CharacterGUI::CharacterItemReleased(CharacterSlotItem* pCharacterItem)
 		// Reset back to the original position
 		pCharacterItem->m_pInventoryIcon->SetLocation(m_pressedX, m_pressedY);
 		string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-		string dropShadowIcon = "media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
+		string dropShadowIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/drop_shadow.tga";
 		pCharacterItem->m_pInventoryIcon->RemoveIcon(dropShadowIcon.c_str());
 
 		// Figure out if we are still in the same slot, to re-show the tooltip

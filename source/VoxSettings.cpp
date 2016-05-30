@@ -124,7 +124,7 @@ void VoxSettings::SaveOptions()
 	ofstream file;
 
 	// Open the file
-	string optionsIniFile = "media/config/options.ini";
+	string optionsIniFile = "/Users/ryanjones/development/cpp/Vox/media/config/options.ini";
 	file.open(optionsIniFile.c_str(), ios::out);
 
 	file << "[Gameplay]\n";

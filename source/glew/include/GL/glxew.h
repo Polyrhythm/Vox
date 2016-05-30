@@ -1500,13 +1500,8 @@ typedef int ( * PFNGLXVIDEORESIZESUNPROC) (Display* display, GLXDrawable window,
 
 /* ------------------------------------------------------------------------- */
 
-#ifdef GLEW_MX
-#define GLXEW_FUN_EXPORT GLEW_FUN_EXPORT
-#define GLXEW_VAR_EXPORT
-#else
 #define GLXEW_FUN_EXPORT GLEW_FUN_EXPORT
 #define GLXEW_VAR_EXPORT GLEW_VAR_EXPORT
-#endif /* GLEW_MX */
 
 GLXEW_FUN_EXPORT PFNGLXGETCURRENTDISPLAYPROC __glewXGetCurrentDisplay;
 
@@ -1658,12 +1653,6 @@ GLXEW_FUN_EXPORT PFNGLXGETTRANSPARENTINDEXSUNPROC __glewXGetTransparentIndexSUN;
 
 GLXEW_FUN_EXPORT PFNGLXGETVIDEORESIZESUNPROC __glewXGetVideoResizeSUN;
 GLXEW_FUN_EXPORT PFNGLXVIDEORESIZESUNPROC __glewXVideoResizeSUN;
-
-#if defined(GLEW_MX)
-struct GLXEWContextStruct
-{
-#endif /* GLEW_MX */
-
 GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_0;
 GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_1;
 GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_2;
@@ -1734,34 +1723,18 @@ GLXEW_VAR_EXPORT GLboolean __GLXEW_SGI_swap_control;
 GLXEW_VAR_EXPORT GLboolean __GLXEW_SGI_video_sync;
 GLXEW_VAR_EXPORT GLboolean __GLXEW_SUN_get_transparent_index;
 GLXEW_VAR_EXPORT GLboolean __GLXEW_SUN_video_resize;
-
-#ifdef GLEW_MX
-}; /* GLXEWContextStruct */
-#endif /* GLEW_MX */
-
 /* ------------------------------------------------------------------------ */
-
-#ifdef GLEW_MX
-
-typedef struct GLXEWContextStruct GLXEWContext;
-GLEWAPI GLenum GLEWAPIENTRY glxewContextInit (GLXEWContext *ctx);
-GLEWAPI GLboolean GLEWAPIENTRY glxewContextIsSupported (const GLXEWContext *ctx, const char *name);
-
-#define glxewInit() glxewContextInit(glxewGetContext())
-#define glxewIsSupported(x) glxewContextIsSupported(glxewGetContext(), x)
-
-#define GLXEW_GET_VAR(x) (*(const GLboolean*)&(glxewGetContext()->x))
-#define GLXEW_GET_FUN(x) x
-
-#else /* GLEW_MX */
 
 GLEWAPI GLenum GLEWAPIENTRY glxewInit ();
 GLEWAPI GLboolean GLEWAPIENTRY glxewIsSupported (const char *name);
 
+#ifndef GLXEW_GET_VAR
 #define GLXEW_GET_VAR(x) (*(const GLboolean*)&x)
-#define GLXEW_GET_FUN(x) x
+#endif
 
-#endif /* GLEW_MX */
+#ifndef GLXEW_GET_FUN
+#define GLXEW_GET_FUN(x) x
+#endif
 
 GLEWAPI GLboolean GLEWAPIENTRY glxewGetExtension (const char *name);
 

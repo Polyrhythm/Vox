@@ -291,67 +291,67 @@ void CraftingGUI::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/common/items/border_common.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_common.tga";
 	m_pInventoryBackgroundSlotBorder_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
 	m_pInventoryBackgroundSlotBorder_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_magical.tga";
 	m_pInventoryBackgroundSlotBorder_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_rare.tga";
 	m_pInventoryBackgroundSlotBorder_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_epic.tga";
 	m_pInventoryBackgroundSlotBorder_Epic->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_common.tga";
 	m_pTooltipBackground_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_uncommon.tga";
 	m_pTooltipBackground_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_magical.tga";
 	m_pTooltipBackground_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_rare.tga";
 	m_pTooltipBackground_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/Tooltips/tooltip_background_epic.tga";
 	m_pTooltipBackground_Epic->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/craft_button.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/craft_button.tga";
 	m_pCraftButton_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/craft_button_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/craft_button_hover.tga";
 	m_pCraftButton_Icon_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/craft_button_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/craft_button_pressed.tga";
 	m_pCraftButton_Icon_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/craft_button_disabled.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/craft_button_disabled.tga";
 	m_pCraftButton_Icon_Disabled->SetIcon(iconName);
 	m_pCraftButton->SetDefaultIcon(m_pCraftButton_Icon);
 	m_pCraftButton->SetHoverIcon(m_pCraftButton_Icon_Hover);
 	m_pCraftButton->SetSelectedIcon(m_pCraftButton_Icon_Pressed);
 	m_pCraftButton->SetDisabledIcon(m_pCraftButton_Icon_Disabled);
 
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/craft_progress_filler.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/craft_progress_filler.tga";
 	m_pCraftingProgressBarFiller->SetIcon(iconName);;
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/craft_progress_filler_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/craft_progress_filler_background.tga";
 	m_pCraftingProgressBarBackgroundFiller->SetIcon(iconName);
 
 	m_pCraftingProgressBar->SetProgressFiller(m_pCraftingProgressBarFiller);
 	m_pCraftingProgressBar->SetProgressBackground(m_pCraftingProgressBarBackgroundFiller);
 
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/search_textbox.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/search_textbox.tga";
 	m_pSearchTextboxIcon->SetIcon(iconName);
 
 	m_pSearchBox->SetBackgroundIcon(m_pSearchTextboxIcon);
 
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_button.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_button.tga";
 	m_pRecipeButton_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_hover_button.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_hover_button.tga";
 	m_pRecipeButton_Hover_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_pressed_button.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_pressed_button.tga";
 	m_pRecipeButton_Pressed_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_selected_button.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/recipe_item_selected_button.tga";
 	m_pRecipeButton_Selected_Icon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/crafting_title_icon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/crafting_title_icon.tga";
 	m_pTitleBarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/crafting_window_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/crafting_window_background.tga";
 	m_pCraftingWindowBackgroundIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/CraftingGUI/titlebar_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/CraftingGUI/titlebar_background.tga";
 	m_pTitleBarBackgroundIcon->SetIcon(iconName);
 
 	m_pCraftingWindow->SetBackgroundIcon(m_pCraftingWindowBackgroundIcon);
@@ -888,31 +888,31 @@ void CraftingGUI::CreateIngredientsButtons()
 		{
 			case ItemQuality_Common:
 			{
-				string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
+				string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
 				pNewCraftingItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 54, 54, 0, 0, 1.0f);
 				break;
 			}
 			case ItemQuality_Uncommon:
 			{
-				string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
+				string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
 				pNewCraftingItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 54, 54, 0, 0, 1.0f);
 				break;
 			}
 			case ItemQuality_Magical:
 			{
-				string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
+				string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
 				pNewCraftingItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 54, 54, 0, 0, 1.0f);
 				break;
 			}
 			case ItemQuality_Rare:
 			{
-				string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
+				string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
 				pNewCraftingItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 54, 54, 0, 0, 1.0f);
 				break;
 			}
 			case ItemQuality_Epic:
 			{
-				string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
+				string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
 				pNewCraftingItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 54, 54, 0, 0, 1.0f);
 				break;
 			}

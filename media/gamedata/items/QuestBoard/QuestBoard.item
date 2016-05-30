@@ -2,7 +2,7 @@ offset: 0 18 0
 scale: 1.0
 
 numAnimatedSections: 1
-qubicleFile: media/gamedata/items/QuestBoard/quest_board.qb
+qubicleFile: /Users/ryanjones/Development/cpp/Vox/media/gamedata/items/QuestBoard/quest_board.qb
 renderScale: 1.0
 renderOffset: 0 0 0
 autoStartAnimation: 0

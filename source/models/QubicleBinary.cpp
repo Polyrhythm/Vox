@@ -158,14 +158,16 @@ bool QubicleBinary::Import(const char* fileName, bool faceMerging)
 {
 	m_fileName = fileName;
 
-	char qbFilename[256];
-	sprintf(qbFilename, fileName);;
-
 	FILE* pQBfile = NULL;
-	fopen_s(&pQBfile, qbFilename, "rb");
+	pQBfile = fopen(fileName, "r");
 
 	const unsigned int CODEFLAG = 2;
 	const unsigned int NEXTSLICEFLAG = 6;
+
+  if (pQBfile == NULL) {
+    cout << fileName << "\n";
+    cout << strerror(errno) << "\n\n";
+  }
 
 	if (pQBfile != NULL)
 	{

@@ -15,6 +15,9 @@ Last update: 2006/11/12 (Geometry Shader Support)
 #include <algorithm>
 #include <math.h>
 #include <string.h>
+#ifdef __APPLE__
+#include <OpenGL/glext.h>
+#endif
 
 using namespace std;
 //using namespace cwc;
@@ -110,7 +113,7 @@ const char* aGLSLStrings[] = {
       if (extensions_init) return true;
       extensions_init = true;
 
-	  glewExperimental = GL_TRUE;
+      glewExperimental = GL_TRUE;
       GLenum err = glewInit();
 
       if (GLEW_OK != err)
@@ -122,8 +125,8 @@ const char* aGLSLStrings[] = {
 
       cout << "OpenGL Vendor: " << (char*) glGetString(GL_VENDOR) << "\n";
       cout << "OpenGL Renderer: " << (char*) glGetString(GL_RENDERER) << "\n";
-      cout << "OpenGL Version: " << (char*) glGetString(GL_VERSION) << "\n\n";
-      //cout << "OpenGL Extensions:\n" << (char*) glGetString(GL_EXTENSIONS) << "\n\n";
+      cout << "OpenGL Version: " << (char*) glGetString(GL_VERSION) << "\n";
+      cout << "OpenGL Shading Language Version: " << (char*) glGetString(GL_SHADING_LANGUAGE_VERSION) << "\n\n";
 
       HasGLSLSupport();
 

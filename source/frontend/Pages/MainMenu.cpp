@@ -21,7 +21,7 @@ MainMenu::MainMenu(Renderer* pRenderer, OpenGLGUI* pGUI, FrontendManager* pFront
 {
 	m_logoTexture = -1;
 	int ltexturewidth2, ltextureheight2;
-	m_pRenderer->LoadTexture("media/textures/vox_logo.tga", &m_logoWidth, &m_logoHeight, &ltexturewidth2, &ltextureheight2, &m_logoTexture);	
+	m_pRenderer->LoadTexture("/Users/ryanjones/Development/cpp/Vox/media/textures/vox_logo.tga", &m_logoWidth, &m_logoHeight, &ltexturewidth2, &ltextureheight2, &m_logoTexture);	
 
 	m_pCreditLabel = new Label(m_pRenderer, m_pFrontendManager->GetFrontendFont_35(), "A game by @AlwaysGeeky", Colour(1.0f, 1.0f, 1.0f, 1.0f));
 	m_pCreditLabel->SetOutlineFont(m_pFrontendManager->GetFrontendFont_35_Outline());

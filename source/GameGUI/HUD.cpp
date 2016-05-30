@@ -136,53 +136,53 @@ HUD::HUD(Renderer* pRenderer, OpenGLGUI* pGUI, FrontendManager* pFrontendManager
 
 	// TODO : Checkboxes for GUI panels on the HUD
 	// Checkbox icons
-	//m_pInventoryCheckboxIcon = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/inventory_normal.tga", 44, 44);
+	//m_pInventoryCheckboxIcon = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/inventory_normal.tga", 44, 44);
 	//m_pInventoryCheckboxIcon->SetDepth(2.0f);
-	//m_pInventoryCheckboxIcon_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/inventory_hover.tga", 44, 44);
+	//m_pInventoryCheckboxIcon_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/inventory_hover.tga", 44, 44);
 	//m_pInventoryCheckboxIcon_Hover->SetDepth(2.0f);
-	//m_pInventoryCheckboxIcon_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/inventory_pressed.tga", 44, 44);
+	//m_pInventoryCheckboxIcon_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/inventory_pressed.tga", 44, 44);
 	//m_pInventoryCheckboxIcon_Pressed->SetDepth(2.0f);
-	//m_pInventoryCheckboxIcon_Toggled = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/inventory_toggled.tga", 44, 44);
+	//m_pInventoryCheckboxIcon_Toggled = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/inventory_toggled.tga", 44, 44);
 	//m_pInventoryCheckboxIcon_Toggled->SetDepth(2.0f);
-	//m_pInventoryCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/inventory_toggled_hover.tga", 44, 44);
+	//m_pInventoryCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/inventory_toggled_hover.tga", 44, 44);
 	//m_pInventoryCheckboxIcon_Toggled_Hover->SetDepth(2.0f);
-	//m_pInventoryCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/inventory_toggled_pressed.tga", 44, 44);
+	//m_pInventoryCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/inventory_toggled_pressed.tga", 44, 44);
 	//m_pInventoryCheckboxIcon_Toggled_Pressed->SetDepth(2.0f);
-	//m_pCharacterCheckboxIcon = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/character_normal.tga", 44, 44);
+	//m_pCharacterCheckboxIcon = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/character_normal.tga", 44, 44);
 	//m_pCharacterCheckboxIcon->SetDepth(2.0f);
-	//m_pCharacterCheckboxIcon_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/character_hover.tga", 44, 44);
+	//m_pCharacterCheckboxIcon_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/character_hover.tga", 44, 44);
 	//m_pCharacterCheckboxIcon_Hover->SetDepth(2.0f);
-	//m_pCharacterCheckboxIcon_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/character_pressed.tga", 44, 44);
+	//m_pCharacterCheckboxIcon_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/character_pressed.tga", 44, 44);
 	//m_pCharacterCheckboxIcon_Pressed->SetDepth(2.0f);
-	//m_pCharacterCheckboxIcon_Toggled = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/character_toggled.tga", 44, 44);
+	//m_pCharacterCheckboxIcon_Toggled = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/character_toggled.tga", 44, 44);
 	//m_pCharacterCheckboxIcon_Toggled->SetDepth(2.0f);
-	//m_pCharacterCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/character_toggled_hover.tga", 44, 44);
+	//m_pCharacterCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/character_toggled_hover.tga", 44, 44);
 	//m_pCharacterCheckboxIcon_Toggled_Hover->SetDepth(2.0f);
-	//m_pCharacterCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/character_toggled_pressed.tga", 44, 44);
+	//m_pCharacterCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/character_toggled_pressed.tga", 44, 44);
 	//m_pCharacterCheckboxIcon_Toggled_Pressed->SetDepth(2.0f);
-	//m_pQuestCheckboxIcon = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/quest_normal.tga", 44, 44);
+	//m_pQuestCheckboxIcon = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/quest_normal.tga", 44, 44);
 	//m_pQuestCheckboxIcon->SetDepth(2.0f);
-	//m_pQuestCheckboxIcon_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/quest_hover.tga", 44, 44);
+	//m_pQuestCheckboxIcon_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/quest_hover.tga", 44, 44);
 	//m_pQuestCheckboxIcon_Hover->SetDepth(2.0f);
-	//m_pQuestCheckboxIcon_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/quest_pressed.tga", 44, 44);
+	//m_pQuestCheckboxIcon_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/quest_pressed.tga", 44, 44);
 	//m_pQuestCheckboxIcon_Pressed->SetDepth(2.0f);
-	//m_pQuestCheckboxIcon_Toggled = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/quest_toggled.tga", 44, 44);
+	//m_pQuestCheckboxIcon_Toggled = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/quest_toggled.tga", 44, 44);
 	//m_pQuestCheckboxIcon_Toggled->SetDepth(2.0f);
-	//m_pQuestCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/quest_toggled_hover.tga", 44, 44);
+	//m_pQuestCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/quest_toggled_hover.tga", 44, 44);
 	//m_pQuestCheckboxIcon_Toggled_Hover->SetDepth(2.0f);
-	//m_pQuestCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/quest_toggled_pressed.tga", 44, 44);
+	//m_pQuestCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/quest_toggled_pressed.tga", 44, 44);
 	//m_pQuestCheckboxIcon_Toggled_Pressed->SetDepth(2.0f);
-	//m_pCraftingCheckboxIcon = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/crafting_normal.tga", 44, 44);
+	//m_pCraftingCheckboxIcon = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/crafting_normal.tga", 44, 44);
 	//m_pCraftingCheckboxIcon->SetDepth(2.0f);
-	//m_pCraftingCheckboxIcon_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/crafting_hover.tga", 44, 44);
+	//m_pCraftingCheckboxIcon_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/crafting_hover.tga", 44, 44);
 	//m_pCraftingCheckboxIcon_Hover->SetDepth(2.0f);
-	//m_pCraftingCheckboxIcon_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/crafting_pressed.tga", 44, 44);
+	//m_pCraftingCheckboxIcon_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/crafting_pressed.tga", 44, 44);
 	//m_pCraftingCheckboxIcon_Pressed->SetDepth(2.0f);
-	//m_pCraftingCheckboxIcon_Toggled = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/crafting_toggled.tga", 44, 44);
+	//m_pCraftingCheckboxIcon_Toggled = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/crafting_toggled.tga", 44, 44);
 	//m_pCraftingCheckboxIcon_Toggled->SetDepth(2.0f);
-	//m_pCraftingCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/crafting_toggled_hover.tga", 44, 44);
+	//m_pCraftingCheckboxIcon_Toggled_Hover = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/crafting_toggled_hover.tga", 44, 44);
 	//m_pCraftingCheckboxIcon_Toggled_Hover->SetDepth(2.0f);
-	//m_pCraftingCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "media/textures/gui/Stonewash/HUD/Buttons/crafting_toggled_pressed.tga", 44, 44);
+	//m_pCraftingCheckboxIcon_Toggled_Pressed = new Icon(m_pRenderer, "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/Stonewash/HUD/Buttons/crafting_toggled_pressed.tga", 44, 44);
 	//m_pCraftingCheckboxIcon_Toggled_Pressed->SetDepth(2.0f);
 
 	//// GUI panel checkboxes
@@ -432,33 +432,33 @@ void HUD::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/HUD/portrait_background.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/portrait_background.tga";
 	m_pPortraitBackgroundIcon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/HUD/health_container.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/health_container.tga";
 	m_pHealthContainerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/health_filler.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/health_filler.tga";
 	m_pHealthFillerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/health_filler_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/health_filler_background.tga";
 	m_pHealthFillerBackgroundIcon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/HUD/mana_filler.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/mana_filler.tga";
 	m_pManaFillerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/mana_filler_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/mana_filler_background.tga";
 	m_pManaFillerBackgroundIcon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/HUD/experience_container.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/experience_container.tga";
 	m_pExperienceContainerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/experience_filler.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/experience_filler.tga";
 	m_pExperienceFillerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/experience_filler_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/experience_filler_background.tga";
 	m_pExperienceFillerBackgroundIcon->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/HUD/enemy_health_container.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/enemy_health_container.tga";
 	m_pEnemyHealthContainerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/enemy_health_filler.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/enemy_health_filler.tga";
 	m_pEnemyHealthFillerIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/HUD/enemy_health_filler_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/HUD/enemy_health_filler_background.tga";
 	m_pEnemyHealthFillerBackgroundIcon->SetIcon(iconName);
 
 	m_pFrontendManager->SetButtonIcons(m_pRespawnButton, ButtonSize_225x75);

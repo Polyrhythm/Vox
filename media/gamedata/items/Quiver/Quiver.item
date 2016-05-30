@@ -2,7 +2,7 @@ offset: 0 0 0
 scale: 1.0
 
 numAnimatedSections: 1
-qubicleFile: media/gamedata/items/Quiver/Quiver.qb
+qubicleFile: /Users/ryanjones/Development/cpp/Vox/media/gamedata/items/Quiver/Quiver.qb
 renderScale: 0.45
 renderOffset: 0 -3 -12
 autoStartAnimation: 0

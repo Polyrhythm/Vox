@@ -236,11 +236,11 @@ void QuestGUI::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/QuestGUI/quest_title_icon.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/quest_title_icon.tga";
 	m_pTitleBarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/quest_window_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/quest_window_background.tga";
 	m_pQuestLogWindowBackgroundIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/titlebar_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/titlebar_background.tga";
 	m_pTitleBarBackgroundIcon->SetIcon(iconName);
 
 	m_pQuestLogWindow->SetBackgroundIcon(m_pQuestLogWindowBackgroundIcon);
@@ -251,24 +251,24 @@ void QuestGUI::SkinGUI()
 	m_pQuestLogWindow->SetTitleBarDimensions(0, 0, m_titlebarWidth, m_titlebarHeight);
 
 
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_right.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_right.tga";
 	m_pTabOpenCloseButton_Icon_Right->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_right_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_right_hover.tga";
 	m_pTabOpenCloseButton_Icon_Right_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_right_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_right_pressed.tga";
 	m_pTabOpenCloseButton_Icon_Right_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_left.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_left.tga";
 	m_pTabOpenCloseButton_Icon_Left->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_left_hover.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_left_hover.tga";
 	m_pTabOpenCloseButton_Icon_Left_Hover->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_left_pressed.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/tab_openclose_left_pressed.tga";
 	m_pTabOpenCloseButton_Icon_Left_Pressed->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/quests_tab_right.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/quests_tab_right.tga";
 	m_pQuestsTab_Icon_Right->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/QuestGUI/quests_tab_left.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/QuestGUI/quests_tab_left.tga";
 	m_pQuestsTab_Icon_Left->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/Common/alpha_button.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/Common/alpha_button.tga";
 	m_pAlphaButton->SetIcon(iconName);
 
 	m_pFrontendManager->SetScrollbarIcons(m_pQuestListScrollbar);

@@ -258,15 +258,15 @@ void Chunk::Setup()
 
 						if (biome == Biome_GrassLand)
 						{
-							m_pChunkManager->ImportQubicleBinary("media/gamedata/terrain/plains/smalltree.qb", treePos, QubicleImportDirection_Normal);
+							m_pChunkManager->ImportQubicleBinary("/Users/ryanjones/development/cpp/Vox/media/gamedata/terrain/plains/smalltree.qb", treePos, QubicleImportDirection_Normal);
 						}
 						else if (biome == Biome_Desert)
 						{
-							m_pChunkManager->ImportQubicleBinary("media/gamedata/terrain/desert/cactus1.qb", treePos, QubicleImportDirection_Normal);
+							m_pChunkManager->ImportQubicleBinary("/Users/ryanjones/development/cpp/Vox/media/gamedata/terrain/desert/cactus1.qb", treePos, QubicleImportDirection_Normal);
 						}
 						else if (biome == Biome_AshLand)
 						{
-							m_pChunkManager->ImportQubicleBinary("media/gamedata/terrain/ashlands/ashtree1.qb", treePos, QubicleImportDirection_Normal);
+							m_pChunkManager->ImportQubicleBinary("/Users/ryanjones/development/cpp/Vox/media/gamedata/terrain/ashlands/ashtree1.qb", treePos, QubicleImportDirection_Normal);
 						}
 					}
 				}
@@ -278,7 +278,7 @@ void Chunk::Setup()
 				//	if (noiseNormalized >= 0.5f)
 				//	{
 				//		vec3 pos = vec3(xPosition, noiseHeight, zPosition);
-				//		m_pSceneryManager->AddSceneryObject("flower", "media/gamedata/terrain/plains/flower1.qb", pos, vec3(0.0f, 0.0f, 0.0f), QubicleImportDirection_Normal, QubicleImportDirection_Normal, 0.08f, GetRandomNumber(0, 360, 2));
+				//		m_pSceneryManager->AddSceneryObject("flower", "/Users/ryanjones/Development/cpp/Vox/media/gamedata/terrain/plains/flower1.qb", pos, vec3(0.0f, 0.0f, 0.0f), QubicleImportDirection_Normal, QubicleImportDirection_Normal, 0.08f, GetRandomNumber(0, 360, 2));
 				//	}
 				//}
 			}

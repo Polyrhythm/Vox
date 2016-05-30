@@ -2,7 +2,7 @@ offset: 0 0 0
 scale: 1
 
 numAnimatedSections: 1
-qubicleFile: media/gamedata/weapons/Boomerang/boomerang_thrown.qb
+qubicleFile: /Users/ryanjones/development/cpp/Vox/media/gamedata/weapons/Boomerang/boomerang_thrown.qb
 renderScale: 1
 renderOffset: 0 0 0
 autoStartAnimation: 0

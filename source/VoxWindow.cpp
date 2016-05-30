@@ -85,9 +85,9 @@ void VoxWindow::Create()
 
 	/* Initialize any rendering params */
 	int samples = 8;
+  GLint glSamples;
 	glfwWindowHint(GLFW_SAMPLES, samples);
 	glfwWindowHint(GLFW_VISIBLE, GL_FALSE);
-	// glGetIntegerv(GL_SAMPLES_ARB, &samples);
 
 	/* Initialize the joysticks object */
 	memset(m_joysticks, 0, sizeof(m_joysticks));
@@ -99,6 +99,8 @@ void VoxWindow::Create()
 		glfwTerminate();
 		exit(EXIT_FAILURE);
 	}
+
+	glGetIntegerv(GL_SAMPLES_ARB, &glSamples);
 
 	/* Initialize this window object */
 	InitializeWindowContext(m_pWindow);

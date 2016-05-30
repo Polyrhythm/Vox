@@ -431,17 +431,17 @@ void OptionsMenu::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/OptionsMenu/slider_background.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/OptionsMenu/slider_background.tga";
 	m_pSliderBackgroundIcon_MouseSensativity->SetIcon(iconName);
 	m_pSliderBackgroundIcon_GamepadSensativity->SetIcon(iconName);
 	m_pSliderBackgroundIcon_Sound->SetIcon(iconName);
 	m_pSliderBackgroundIcon_Music->SetIcon(iconName);
 
-	iconName = "media/textures/gui/" + themeName + "/OptionsMenu/options_title_icon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/OptionsMenu/options_title_icon.tga";
 	m_pTitleBarIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/OptionsMenu/options_window_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/OptionsMenu/options_window_background.tga";
 	m_pOptionsWindowBackgroundIcon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/OptionsMenu/titlebar_background.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/OptionsMenu/titlebar_background.tga";
 	m_pTitleBarBackgroundIcon->SetIcon(iconName);
 
 	m_pOptionsWindow->SetBackgroundIcon(m_pOptionsWindowBackgroundIcon);

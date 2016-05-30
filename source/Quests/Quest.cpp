@@ -163,7 +163,7 @@ void Quest::ExportQuest()
 	// Replace all spaces in the quest title, with underscores for the quest filename
 	string questName(m_questName);
 	replace(questName.begin(), questName.end(), ' ', '_');
-	sprintf(lfilename, "media/gamedata/quests/%s.quest", questName.c_str());
+	sprintf(lfilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/quests/%s.quest", questName.c_str());
 
 	exportFile.open(lfilename, ios_base::binary);
 
@@ -256,7 +256,7 @@ void Quest::ImportQuest(const char* filename)
 	ifstream importFile;
 
 	char lfilename[128];
-	sprintf(lfilename, "media/gamedata/quests/%s.quest", filename);
+	sprintf(lfilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/quests/%s.quest", filename);
 
 	importFile.open(lfilename, ios_base::binary);
 

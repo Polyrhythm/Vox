@@ -48,7 +48,7 @@ void ModsManager::ClearMods()
 // Loading
 void ModsManager::LoadMods()
 {
-	string modsIniFile = "media/config/mods.ini";
+	string modsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/config/mods.ini";
 	INIReader reader(modsIniFile);
 
 	// Gameplay mods
@@ -88,7 +88,7 @@ void ModsManager::SaveMods()
 	ofstream file;
 
 	// Open the file
-	string modsIniFile = "media/config/mods.ini";
+	string modsIniFile = "/Users/ryanjones/Development/cpp/Vox/media/config/mods.ini";
 	file.open(modsIniFile.c_str(), ios::out);
 
 	file << "[Gameplay]\n";

@@ -1132,7 +1132,7 @@ void Item::Interact()
 			spawnSubItems = true;
 			createHitEffect = true;
 			createCrumbleBlockParticles = true;
-			sprintf(itemFilename, "media/gamedata/items/CopperVein/CopperVein%i.item", m_interactCount);
+			sprintf(itemFilename, "/Users/ryanjones/development/cpp/Vox/media/gamedata/items/CopperVein/CopperVein%i.item", m_interactCount);
 		}
 		if(m_itemType == eItem_IronVein)
 		{
@@ -1140,7 +1140,7 @@ void Item::Interact()
 			spawnSubItems = true;
 			createHitEffect = true;
 			createCrumbleBlockParticles = true;
-			sprintf(itemFilename, "media/gamedata/items/IronVein/IronVein%i.item", m_interactCount);
+			sprintf(itemFilename, "/Users/ryanjones/development/cpp/Vox/media/gamedata/items/IronVein/IronVein%i.item", m_interactCount);
 		}
 		if(m_itemType == eItem_SilverVein)
 		{
@@ -1148,7 +1148,7 @@ void Item::Interact()
 			spawnSubItems = true;
 			createHitEffect = true;
 			createCrumbleBlockParticles = true;
-			sprintf(itemFilename, "media/gamedata/items/SilverVein/SilverVein%i.item", m_interactCount);
+			sprintf(itemFilename, "/Users/ryanjones/development/cpp/Vox/media/gamedata/items/SilverVein/SilverVein%i.item", m_interactCount);
 		}
 		if(m_itemType == eItem_GoldVein)
 		{
@@ -1156,7 +1156,7 @@ void Item::Interact()
 			spawnSubItems = true;
 			createHitEffect = true;
 			createCrumbleBlockParticles = true;
-			sprintf(itemFilename, "media/gamedata/items/GoldVein/GoldVein%i.item", m_interactCount);
+			sprintf(itemFilename, "/Users/ryanjones/development/cpp/Vox/media/gamedata/items/GoldVein/GoldVein%i.item", m_interactCount);
 		}
 		
 		if(changeItemModel)
@@ -1241,7 +1241,7 @@ void Item::Interact()
 		vec3 direction = GetCenter() - m_pPlayer->GetCenter();
 		vec3 hitParticlePos = GetCenter() - (normalize(direction) * (m_radius*0.5f));
 		unsigned int effectId = -1;
-		BlockParticleEffect* pBlockParticleEffect = VoxGame::GetInstance()->GetBlockParticleManager()->ImportParticleEffect("media/gamedata/particles/combat_hit.effect", hitParticlePos, &effectId);
+		BlockParticleEffect* pBlockParticleEffect = VoxGame::GetInstance()->GetBlockParticleManager()->ImportParticleEffect("/Users/ryanjones/Development/cpp/Vox/media/gamedata/particles/combat_hit.effect", hitParticlePos, &effectId);
 		pBlockParticleEffect->PlayEffect();
 	}
 

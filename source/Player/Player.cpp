@@ -390,21 +390,21 @@ void Player::LoadCharacter(string characterName, bool fromCharacterSelectScreen)
 
 	if (fromCharacterSelectScreen)
 	{
-		sprintf(characterBaseFolder, "media/gamedata/models");
-		sprintf(qbFilename, "saves/characters/%s/%s.qb", characterName.c_str(), characterName.c_str());
-		sprintf(ms3dFilename, "media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
-		sprintf(animListFilename, "media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
-		sprintf(facesFilename, "saves/characters/%s/%s.faces", characterName.c_str(), characterName.c_str());
-		sprintf(characterFilename, "saves/characters/%s/%s.character", characterName.c_str(), characterName.c_str());
+		sprintf(characterBaseFolder, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models");
+		sprintf(qbFilename, "/Users/ryanjones/Development/cpp/Vox/saves/characters/%s/%s.qb", characterName.c_str(), characterName.c_str());
+		sprintf(ms3dFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
+		sprintf(animListFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
+		sprintf(facesFilename, "/Users/ryanjones/Development/cpp/Vox/saves/characters/%s/%s.faces", characterName.c_str(), characterName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/saves/characters/%s/%s.character", characterName.c_str(), characterName.c_str());
 	}
 	else
 	{
-		sprintf(characterBaseFolder, "media/gamedata/models");
-		sprintf(qbFilename, "media/gamedata/models/%s/%s.qb", m_type.c_str(), m_modelName.c_str());
-		sprintf(ms3dFilename, "media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
-		sprintf(animListFilename, "media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
-		sprintf(facesFilename, "media/gamedata/models/%s/%s.faces", m_type.c_str(), m_modelName.c_str());
-		sprintf(characterFilename, "media/gamedata/models/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+		sprintf(characterBaseFolder, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models");
+		sprintf(qbFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.qb", m_type.c_str(), m_modelName.c_str());
+		sprintf(ms3dFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.ms3d", m_type.c_str(), m_type.c_str());
+		sprintf(animListFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.animlist", m_type.c_str(), m_type.c_str());
+		sprintf(facesFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.faces", m_type.c_str(), m_modelName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/models/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 	}
 
 	m_pVoxelCharacter->LoadVoxelCharacter(m_type.c_str(), qbFilename, ms3dFilename, animListFilename, facesFilename, characterFilename, characterBaseFolder, true);
@@ -592,7 +592,7 @@ void Player::EquipItem(InventoryItem* pItem)
 		{
 			VoxelWeapon* pNewEquipment = new VoxelWeapon(m_pRenderer, m_pQubicleBinaryManager);
 			pNewEquipment->SetVoxelCharacterParent(NULL);
-			pNewEquipment->LoadWeapon("media/gamedata/items/Quiver/Quiver.item", false);
+			pNewEquipment->LoadWeapon("m/Users/ryanjones/Development/cpp/Vox/edia/gamedata/items/Quiver/Quiver.item", false);
 
 			pNewEquipment->GetAnimatedSection(0)->m_pVoxelObject->GetQubicleModel()->SetScaleAndOffsetForMatrix("Quiver", pNewEquipment->GetAnimatedSection(0)->m_renderScale, pNewEquipment->GetAnimatedSection(0)->m_renderOffset.x, pNewEquipment->GetAnimatedSection(0)->m_renderOffset.y, pNewEquipment->GetAnimatedSection(0)->m_renderOffset.z);
 			QubicleMatrix* pQuiverMatrix = pNewEquipment->GetAnimatedSection(0)->m_pVoxelObject->GetQubicleModel()->GetQubicleMatrix("Quiver");
@@ -944,7 +944,7 @@ void Player::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 		m_pVoxelCharacter->AddQubicleMatrix(pBodyMatrix, false);
 
 		char characterFilename[128];
-		sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 		m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Body");
 	}
 	break;
@@ -955,7 +955,7 @@ void Player::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 		m_pVoxelCharacter->AddQubicleMatrix(pLegsMatrix, false);
 
 		char characterFilename[128];
-		sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 		m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Legs");
 	}
 	break;
@@ -976,7 +976,7 @@ void Player::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 		}
 
 		char characterFilename[128];
-		sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 		m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Right_Hand");
 		m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Left_Hand");
 	}
@@ -998,7 +998,7 @@ void Player::UnequipItem(EquipSlot equipSlot, bool left, bool right)
 		}
 
 		char characterFilename[128];
-		sprintf(characterFilename, "media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
+		sprintf(characterFilename, "/Users/ryanjones/Development/cpp/Vox/media/gamedata/characters/%s/%s.character", m_type.c_str(), m_modelName.c_str());
 		m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Right_Foot");
 		m_pVoxelCharacter->ResetMatrixParamsFromCharacterFile(characterFilename, "Left_Foot");
 	}
@@ -2724,7 +2724,7 @@ void Player::UpdateWorking(float dt)
 			vec3 anvilHitPos = m_lookPoint + vec3(0.0f, 0.5f, 0.0f);
 
 			unsigned int effectId = -1;
-			BlockParticleEffect* pBlockParticleEffect = m_pBlockParticleManager->ImportParticleEffect("media/gamedata/particles/anvil_hit.effect", anvilHitPos, &effectId);
+			BlockParticleEffect* pBlockParticleEffect = m_pBlockParticleManager->ImportParticleEffect("/Users/ryanjones/Development/cpp/Vox/media/gamedata/particles/anvil_hit.effect", anvilHitPos, &effectId);
 			pBlockParticleEffect->PlayEffect();
 
 			// Stop weapon trails

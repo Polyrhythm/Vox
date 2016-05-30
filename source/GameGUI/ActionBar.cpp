@@ -102,17 +102,17 @@ void ActionBar::SkinGUI()
 {
 	string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
 
-	string iconName = "media/textures/gui/" + themeName + "/ActionBar/actionbar_background_6.tga";
+	string iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/ActionBar/actionbar_background_6.tga";
 	m_pActionButtonBackground_6_Icon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_common.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_common.tga";
 	m_pActionButtonBackgroundSlotBorder_Common->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_uncommon.tga";
 	m_pActionButtonBackgroundSlotBorder_Uncommon->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_magical.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_magical.tga";
 	m_pActionButtonBackgroundSlotBorder_Magical->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_rare.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_rare.tga";
 	m_pActionButtonBackgroundSlotBorder_Rare->SetIcon(iconName);
-	iconName = "media/textures/gui/" + themeName + "/common/items/border_epic.tga";
+	iconName = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/border_epic.tga";
 	m_pActionButtonBackgroundSlotBorder_Epic->SetIcon(iconName);
 }
 
@@ -574,31 +574,31 @@ void ActionBar::CreateActionButtonIcon(ActionButtonItem* pActionButton)
 	{
 		case ItemQuality_Common:
 		{
-			string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
+			string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_common.tga";
 			pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 			break;
 		}
 		case ItemQuality_Uncommon:
 		{
-			string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
+			string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_uncommon.tga";
 			pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 			break;
 		}
 		case ItemQuality_Magical:
 		{
-			string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
+			string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_magical.tga";
 			pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 			break;
 		}
 		case ItemQuality_Rare:
 		{
-			string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
+			string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_rare.tga";
 			pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 			break;
 		}
 		case ItemQuality_Epic:
 		{
-			string itemBackgroundIcon = "media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
+			string itemBackgroundIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/common/items/item_background_epic.tga";
 			pNewSlotItem->AddIcon(m_pRenderer, itemBackgroundIcon.c_str(), 64, 64, 64, 64, 0, 0, 1.0f);
 			break;
 		}
@@ -667,7 +667,7 @@ void ActionBar::CreateActionSlots()
 
 		// Create the action backgrounds
 		string themeName = VoxGame::GetInstance()->GetModsManager()->GetHUDTextureTheme();
-		string blankSlotIcon = "media/textures/gui/" + themeName + "/ActionBar/blank_slot.tga";
+		string blankSlotIcon = "/Users/ryanjones/Development/cpp/Vox/media/textures/gui/" + themeName + "/ActionBar/blank_slot.tga";
 		Icon* pNewIcon = new Icon(m_pRenderer, blankSlotIcon.c_str(), 64, 64);
 		pNewIcon->SetDimensions(x, y, width, height);
 		pNewIcon->SetDepth(3.0f);
